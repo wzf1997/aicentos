@@ -5,7 +5,7 @@ import { Feed } from 'feed'
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs'
 import { resolve } from 'path'
 
-const SITE_URL = 'https://www.aicentos.com'
+const SITE_URL = 'https://doc.aicentos.com'
 const SITE_TITLE = 'aicentos'
 const SITE_DESC = 'AI Coding 中转站 - 支持 Claude、Codex 模型在多种平台使用'
 
@@ -282,7 +282,7 @@ export default withPwa(defineConfig({
       description: SITE_DESC,
       theme_color: '#6366f1',
       icons: [
-        { src: '/img/logo.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }
+        { src: p('/img/logo.svg'), sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }
       ]
     },
     workbox: {
@@ -859,7 +859,7 @@ export default withPwa(defineConfig({
       { icon: 'github', link: 'https://github.com/aicentos' }
     ],
     footer: {
-      message: '<a href="https://www.aicentos.com/" target="_blank">主站</a> | <a href="https://www.aicentos.com/feed.xml" target="_blank">RSS</a> | <a href="https://www.aicentos.com/feed.atom" target="_blank">Atom</a> | <a href="https://www.aicentos.com/sitemap.xml" target="_blank">Sitemap</a> | <a href="https://github.com/aicentos" target="_blank">GitHub</a>',
+      message: `<a href="https://www.aicentos.com/" target="_blank">主站</a> | <a href="${SITE_URL}/feed.xml" target="_blank">RSS</a> | <a href="${SITE_URL}/feed.atom" target="_blank">Atom</a> | <a href="${SITE_URL}/sitemap.xml" target="_blank">Sitemap</a> | <a href="https://github.com/aicentos" target="_blank">GitHub</a>`,
       copyright: `Copyright © ${new Date().getFullYear()} aicentos`
     }
   }

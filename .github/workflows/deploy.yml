@@ -1,6 +1,9 @@
 name: Deploy
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # 每天 UTC 4:00 (北京时间 12:00) 执行
     - cron: '0 4 * * *'
@@ -20,12 +23,7 @@ jobs:
   # ──────────────────────────────────────────────────────────────────────────
   # 1. 构建 VitePress → GitHub Pages
   #
-  # VITEPRESS_BASE 优先级：
-  #   1. repo 变量 vars.VITEPRESS_BASE（Settings > Variables > Actions）
-  #   2. 兜底自动使用 /<仓库名>/  (e.g. /aicentos/)
-  #
-  # 如果已绑定自定义域名 https://www.aicentos.com/，在 repo Variables 设置：
-  #   VITEPRESS_BASE = /
+  # 自定义域名 doc.aicentos.com 从根路径服务，VitePress base 固定为 /。
   # ──────────────────────────────────────────────────────────────────────────
   build-pages:
     runs-on: ubuntu-latest
@@ -36,7 +34,7 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 7.33.7
 
       - uses: actions/setup-node@v4
         with:
@@ -56,7 +54,7 @@ jobs:
       - name: Build (GitHub Pages)
         run: pnpm build
         env:
-          VITEPRESS_BASE: ${{ vars.VITEPRESS_BASE || format('/{0}/', github.event.repository.name) }}
+          VITEPRESS_BASE: /
           GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION || secrets.GOOGLE_SITE_VERIFICATION }}
           BING_SITE_VERIFICATION: ${{ vars.BING_SITE_VERIFICATION || secrets.BING_SITE_VERIFICATION }}
           BAIDU_SITE_VERIFICATION: ${{ vars.BAIDU_SITE_VERIFICATION || secrets.BAIDU_SITE_VERIFICATION }}
@@ -66,6 +64,9 @@ jobs:
           NAVER_SITE_VERIFICATION: ${{ vars.NAVER_SITE_VERIFICATION || secrets.NAVER_SITE_VERIFICATION }}
           SEZNAM_SITE_VERIFICATION: ${{ vars.SEZNAM_SITE_VERIFICATION || secrets.SEZNAM_SITE_VERIFICATION }}
           SEO_VERIFICATION_EXTRA: ${{ vars.SEO_VERIFICATION_EXTRA || secrets.SEO_VERIFICATION_EXTRA }}
+
+      - name: Configure custom domain
+        run: cp public/CNAME .vitepress/dist/CNAME
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -102,7 +103,7 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 7.33.7
 
       - uses: actions/setup-node@v4
         with:

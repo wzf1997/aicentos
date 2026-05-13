@@ -19,7 +19,7 @@ export type PageActionPlatform = {
 }
 
 export const PAGE_ACTION_CONFIG = {
-  siteBaseUrl: 'https://www.aicentos.com/',
+  siteBaseUrl: 'https://doc.aicentos.com/',
   github: {
     owner: 'aicentos',
     repo: 'aicentos',

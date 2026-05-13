@@ -1,4 +1,4 @@
-# FishXCode Refund Policy
+# aicentos Refund Policy
 
 **Effective Date: April 22, 2026**
 
@@ -71,8 +71,8 @@ Where:
 
 ## 7. Policy Updates
 
-FishXCode may update this Policy in accordance with business rules, payment channel requirements, or applicable laws and regulations. The updated version will take effect upon publication on the platform or on the specified effective date.
+aicentos may update this Policy in accordance with business rules, payment channel requirements, or applicable laws and regulations. The updated version will take effect upon publication on the platform or on the specified effective date.
 
 ## 8. Contact Us
 
-If you need to apply for a refund, conversion, or compensation, please email **support@fishxcode.com** or contact the assistant in the group.
+If you need to apply for a refund, conversion, or compensation, please email **aicentos** or contact the assistant in the group.

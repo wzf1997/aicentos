@@ -1,10 +1,10 @@
-# Términos de Servicio de FishXCode
+# Términos de Servicio de aicentos
 
 **Fecha de entrada en vigor: 11 de febrero de 2026**
 
 ## 1. Disposiciones generales
 
-El presente acuerdo se celebra entre el usuario y la plataforma API FishXCode. Incorpora la política de privacidad y demás normas relacionadas. El uso del servicio requiere haber cumplido 18 años de edad. Toda persona que actúe en representación de una entidad jurídica deberá contar con la autorización necesaria para obligarla contractualmente.
+El presente acuerdo se celebra entre el usuario y la plataforma API aicentos. Incorpora la política de privacidad y demás normas relacionadas. El uso del servicio requiere haber cumplido 18 años de edad. Toda persona que actúe en representación de una entidad jurídica deberá contar con la autorización necesaria para obligarla contractualmente.
 
 ## 2. Definiciones
 
@@ -19,7 +19,7 @@ El usuario está obligado a registrarse con información veraz y actualizada. Le
 
 ## 4. Normas de uso
 
-FishXCode otorga al usuario una licencia limitada, no exclusiva e intransferible. Están estrictamente prohibidos:
+aicentos otorga al usuario una licencia limitada, no exclusiva e intransferible. Están estrictamente prohibidos:
 
 1. Cualquier acto que atente contra la seguridad nacional;
 2. La difusión de contenido pornográfico, violento o relacionado con juegos de azar ilegales;
@@ -32,29 +32,29 @@ Asimismo, se prohíbe la reventa del servicio o cualquier uso comercial no autor
 
 ## 5. Facturación y reembolsos
 
-El servicio opera bajo un modelo de créditos prepagados. Los reembolsos del saldo recargado, los reembolsos y conversiones de paquetes Codex, así como las reglas aplicables a los paquetes especiales de Claude, se rigen por la [Política de reembolso](/es/refund). En caso de error de facturación atribuible a un fallo del sistema de FishXCode, el usuario podrá contactar con soporte dentro del plazo de siete (7) días desde el incidente. El usuario es el único responsable del pago de todos los impuestos aplicables.
+El servicio opera bajo un modelo de créditos prepagados. Los reembolsos del saldo recargado, los reembolsos y conversiones de paquetes Codex, así como las reglas aplicables a los paquetes especiales de Claude, se rigen por la [Política de reembolso](/es/refund). En caso de error de facturación atribuible a un fallo del sistema de aicentos, el usuario podrá contactar con soporte dentro del plazo de siete (7) días desde el incidente. El usuario es el único responsable del pago de todos los impuestos aplicables.
 
 ## 6. Datos y privacidad
 
-El usuario conserva la titularidad de los datos que envía. FishXCode conserva los registros de red conforme a las obligaciones legales vigentes en la República Popular China, y los comunica a las autoridades competentes cuando así lo exija la ley.
+El usuario conserva la titularidad de los datos que envía. aicentos conserva los registros de red conforme a las obligaciones legales vigentes en la República Popular China, y los comunica a las autoridades competentes cuando así lo exija la ley.
 
 ## 7. Propiedad intelectual
 
-La totalidad de la propiedad intelectual de la plataforma pertenece a FishXCode. Cualquier comentario o sugerencia transmitida por el usuario otorga a FishXCode una licencia mundial, permanente e irrevocable sobre dichos elementos.
+La totalidad de la propiedad intelectual de la plataforma pertenece a aicentos. Cualquier comentario o sugerencia transmitida por el usuario otorga a aicentos una licencia mundial, permanente e irrevocable sobre dichos elementos.
 
 ## 8. Exclusión de garantías y limitación de responsabilidad
 
 ::: warning
-El servicio se presta «tal cual», sin garantía de ningún tipo. FishXCode no asumirá responsabilidad alguna por daños indirectos o incidentales. La responsabilidad total de FishXCode se limita al importe abonado durante los últimos doce (12) meses o a cien dólares estadounidenses (100 USD), prevaleciendo la cifra mayor.
+El servicio se presta «tal cual», sin garantía de ningún tipo. aicentos no asumirá responsabilidad alguna por daños indirectos o incidentales. La responsabilidad total de aicentos se limita al importe abonado durante los últimos doce (12) meses o a cien dólares estadounidenses (100 USD), prevaleciendo la cifra mayor.
 :::
 
 ## 9. Modificación y resolución
 
-FishXCode se reserva el derecho de modificar los presentes términos en cualquier momento. La continuación en el uso del servicio implica la aceptación de los nuevos términos. El incumplimiento de los presentes términos podrá dar lugar a la rescisión del servicio.
+aicentos se reserva el derecho de modificar los presentes términos en cualquier momento. La continuación en el uso del servicio implica la aceptación de los nuevos términos. El incumplimiento de los presentes términos podrá dar lugar a la rescisión del servicio.
 
 ## 10. Legislación aplicable
 
-Los presentes términos se rigen por la legislación de la República Popular China. Cualquier controversia se resolverá, en primer término, mediante negociación amistosa. En caso de no alcanzarse un acuerdo, el litigio se someterá a los tribunales competentes del lugar donde FishXCode tenga su domicilio social.
+Los presentes términos se rigen por la legislación de la República Popular China. Cualquier controversia se resolverá, en primer término, mediante negociación amistosa. En caso de no alcanzarse un acuerdo, el litigio se someterá a los tribunales competentes del lugar donde aicentos tenga su domicilio social.
 
 ## 11. Disposiciones diversas
 
@@ -62,4 +62,4 @@ El presente acuerdo constituye la totalidad del contrato entre las partes. La in
 
 ---
 
-Contacto: [support@fishxcode.com](mailto:support@fishxcode.com)
+Contacto: [aicentos](https://www.aicentos.com/)

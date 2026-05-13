@@ -2,9 +2,9 @@
 
 ## 通用
 
-### FishXCode 是什么？
+### aicentos 是什么？
 
-FishXCode 是一个 AI Coding 中转站，支持 Claude、Codex 模型在多种平台使用。
+aicentos 是一个 AI Coding 中转站，支持 Claude、Codex 模型在多种平台使用。
 
 ### 支持哪些工具？
 
@@ -19,7 +19,7 @@ FishXCode 是一个 AI Coding 中转站，支持 Claude、Codex 模型在多种�
 
 ### 数据隐私如何保障？
 
-FishXCode 仅作为 API 中转服务，不存储你的代码和对话内容。所有请求直接转发至对应的模型提供商。
+aicentos 仅作为 API 中转服务，不存储你的代码和对话内容。所有请求直接转发至对应的模型提供商。
 
 ::: tip 建议
 敏感项目建议在使用前阅读各模型提供商的隐私政策。
@@ -29,11 +29,11 @@ FishXCode 仅作为 API 中转服务，不存储你的代码和对话内容。�
 
 ### 如何注册？
 
-访问 [fishxcode.com/register](https://fishxcode.com/register?aff=9CTW)，按提示完成注册即可。
+访问 [aicentos](https://www.aicentos.com/sign-up)，按提示完成注册即可。
 
 ### 如何获取 API Token？
 
-注册后登录控制台，前往 [Token 管理页](https://fishxcode.com/console/token) 创建新的 Token。
+注册后登录控制台，前往 [Token 管理页](https://www.aicentos.com/console/token) 创建新的 Token。
 
 ### Token 有效期多长？
 
@@ -41,7 +41,7 @@ Token 在手动删除或重新生成前持续有效。建议定期轮换以确�
 
 ### 用量额度是多少？
 
-FishXCode 为每个用户提供用量额度，具体数量根据平台资源动态调整。请关注控制台中的用量信息。
+aicentos 为每个用户提供用量额度，具体数量根据平台资源动态调整。请关注控制台中的用量信息。
 
 ::: warning 注意
 额度用尽后请求会被拒绝，请合理规划用量。
@@ -76,10 +76,10 @@ echo $ANTHROPIC_AUTH_TOKEN
 | RooCode | VS Code 设置 JSON |
 | Qwen Code | 环境变量方式配置 |
 
-### 连接不上 FishXCode 服务怎么办？
+### 连接不上 aicentos 服务怎么办？
 
-1. 确认 `BASE_URL` 设置为 `https://fishxcode.com/`（注意末尾的 `/`）
-2. 检查网络是否能访问 `fishxcode.com`
+1. 确认 `BASE_URL` 设置为 `https://www.aicentos.com/`（注意末尾的 `/`）
+2. 检查网络是否能访问 `https://www.aicentos.com/`
 3. 如果在公司网络中，确认代理设置是否正确
 
 ## 模型选择
@@ -118,11 +118,11 @@ export ANTHROPIC_MODEL=claude-sonnet-4-5-20250929
 - `API_KEY` 和 `AUTH_TOKEN` 未同时设置
 :::
 
-解决方法：前往 [控制台](https://fishxcode.com/console/token) 确认 Token 状态，重新复制粘贴。
+解决方法：前往 [控制台](https://www.aicentos.com/console/token) 确认 Token 状态，重新复制粘贴。
 
 ### 如何查看和理解错误日志？
 
-进入 [控制台 → 使用日志](https://fishxcode.com/console/log)，将日志类型切换为 **错误日志**，可按时间、模型、Token、分组、请求 ID、错误消息和状态码筛选。
+进入 [控制台 → 使用日志](https://www.aicentos.com/console/log)，将日志类型切换为 **错误日志**，可按时间、模型、Token、分组、请求 ID、错误消息和状态码筛选。
 
 ::: tip 排查建议
 - 优先复制接口响应或日志中的 `request_id`，在使用日志中精确搜索同一次请求
@@ -163,4 +163,4 @@ export ANTHROPIC_MODEL=claude-sonnet-4-5-20250929
 
 ### 返回模型不可用（Model Not Available）
 
-检查指定的模型名称是否正确，参考 [快速开始](/start) 中的推荐模型列表。部分模型可能尚未在 FishXCode 上线。
+检查指定的模型名称是否正确，参考 [快速开始](/start) 中的推荐模型列表。部分模型可能尚未在 aicentos 上线。

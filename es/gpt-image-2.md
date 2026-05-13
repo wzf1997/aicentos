@@ -4,12 +4,12 @@
 
 Antes de empezar, prepara lo siguiente:
 
-1. Una cuenta de FishXCode
+1. Una cuenta de aicentos
 2. Un token API usable
 3. Confirmar que tu token actual puede acceder a `gpt-image-2`
 
 Obtén tu token aquí:
-- Consola: [https://fishxcode.com/console/token](https://fishxcode.com/console/token)
+- Consola: [aicentos](https://www.aicentos.com/console/token)
 
 ::: tip Consejo
 Si tu consola muestra grupos de modelos o permisos, asegúrate de que tu token incluya acceso a `gpt-image-2`. Si no estás seguro, crea un token nuevo por defecto y haz la prueba con ese.
@@ -17,10 +17,10 @@ Si tu consola muestra grupos de modelos o permisos, asegúrate de que tu token i
 
 ## Herramienta visual open source
 
-Si no quieres empezar escribiendo código, puedes usar la herramienta GPT-Image-2 open source de FishXCode para probar prompts y generar imágenes directamente:
+Si no quieres empezar escribiendo código, puedes usar la herramienta GPT-Image-2 open source de aicentos para probar prompts y generar imágenes directamente:
 
-- Demo online: [https://fishxcode-gpt-image-2.lovable.app/](https://fishxcode-gpt-image-2.lovable.app/)
-- Repositorio GitHub: [https://github.com/fishxcode/gpt-image-2](https://github.com/fishxcode/gpt-image-2)
+- Demo online: [aicentos](https://www.aicentos.com/)
+- Repositorio GitHub: [aicentos](https://www.aicentos.com/)
 
 ::: tip Consejo
 Usa primero la herramienta para verificar tu token, prompt y parámetros de imagen; después migra los mismos parámetros a tu código o flujo de trabajo.
@@ -30,7 +30,7 @@ Usa primero la herramienta para verificar tu token, prompt y parámetros de imag
 
 Es la forma más directa y corresponde al endpoint de generación de imágenes compatible con OpenAI.
 
-- Endpoint: `https://fishxcode.com/v1/images/generations`
+- Endpoint: `https://www.aicentos.com/v1/images/generations`
 - Modelo: `gpt-image-2`
 
 ### Ejemplo en Python
@@ -40,8 +40,8 @@ import base64
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-your-fishxcode-token",
-    base_url="https://fishxcode.com/v1"
+    api_key="sk-your-aicentos-token",
+    base_url="https://www.aicentos.com/v1"
 )
 
 result = client.images.generate(
@@ -63,8 +63,8 @@ import fs from "node:fs";
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  apiKey: "sk-your-fishxcode-token",
-  baseURL: "https://fishxcode.com/v1",
+  apiKey: "sk-your-aicentos-token",
+  baseURL: "https://www.aicentos.com/v1",
 });
 
 const result = await client.images.generate({
@@ -81,8 +81,8 @@ fs.writeFileSync("gpt-image-2-output.png", Buffer.from(imageBase64, "base64"));
 
 ```bash
 curl --request POST \
-  --url https://fishxcode.com/v1/images/generations \
-  --header "Authorization: Bearer sk-your-fishxcode-token" \
+  --url https://www.aicentos.com/v1/images/generations \
+  --header "Authorization: Bearer sk-your-aicentos-token" \
   --header "Content-Type: application/json" \
   --data '{
     "model": "gpt-image-2",
@@ -99,7 +99,7 @@ El resultado principal de la Images API suele venir en `b64_json`, por lo que de
 
 Si tu flujo ya está basado en `/v1/chat/completions`, también puedes invocar `gpt-image-2` desde ahí.
 
-- Endpoint: `https://fishxcode.com/v1/chat/completions`
+- Endpoint: `https://www.aicentos.com/v1/chat/completions`
 - Modelo: `gpt-image-2`
 
 ### Ejemplo en Python
@@ -108,8 +108,8 @@ Si tu flujo ya está basado en `/v1/chat/completions`, también puedes invocar `
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-your-fishxcode-token",
-    base_url="https://fishxcode.com/v1"
+    api_key="sk-your-aicentos-token",
+    base_url="https://www.aicentos.com/v1"
 )
 
 response = client.chat.completions.create(
@@ -129,8 +129,8 @@ print(response)
 
 ```bash
 curl --request POST \
-  --url https://fishxcode.com/v1/chat/completions \
-  --header "Authorization: Bearer sk-your-fishxcode-token" \
+  --url https://www.aicentos.com/v1/chat/completions \
+  --header "Authorization: Bearer sk-your-aicentos-token" \
   --header "Content-Type: application/json" \
   --data '{
     "model": "gpt-image-2",
@@ -172,8 +172,8 @@ Si prefieres generar imágenes directamente desde Cherry Studio, configúralo as
 
 Crea un proveedor personalizado en Cherry Studio con:
 
-- API Key: tu token de FishXCode
-- Base URL: `https://fishxcode.com/v1`
+- API Key: tu token de aicentos
+- Base URL: `https://www.aicentos.com/v1`
 
 ### 2. Añadir el modelo
 
@@ -191,7 +191,7 @@ Crea una nueva sesión o abre el panel de generación de imágenes, selecciona `
 
 ::: tip Consejo
 Si Cherry Studio no muestra imágenes, revisa primero:
-- que la Base URL sea `https://fishxcode.com/v1`
+- que la Base URL sea `https://www.aicentos.com/v1`
 - que tu versión de Cherry Studio soporte correctamente la API OpenAI Images
 :::
 
@@ -211,9 +211,9 @@ Porque muchas respuestas devuelven `b64_json` en lugar de un archivo guardado. D
 Revísalo en este orden:
 
 1. Asegúrate de que el nombre del modelo sea `gpt-image-2`
-2. Asegúrate de que el token venga de la [Consola de FishXCode](https://fishxcode.com/console/token)
+2. Asegúrate de que el token venga de la [Consola de aicentos](https://www.aicentos.com/console/token)
 3. Asegúrate de que tu token tenga acceso a `gpt-image-2`
-4. Asegúrate de que la Base URL sea `https://fishxcode.com/v1`
+4. Asegúrate de que la Base URL sea `https://www.aicentos.com/v1`
 
 ### ¿Por qué fallan algunos parámetros extra?
 

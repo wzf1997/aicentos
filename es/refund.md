@@ -1,4 +1,4 @@
-# Política de reembolso de FishXCode
+# Política de reembolso de aicentos
 
 **Fecha de entrada en vigor: 22 de abril de 2026**
 
@@ -71,8 +71,8 @@ Donde:
 
 ## 7. Actualizaciones de la política
 
-FishXCode podrá actualizar esta política conforme a las reglas comerciales, a los requisitos de los canales de pago o a la legislación aplicable. La versión actualizada surtirá efecto una vez publicada en la plataforma o en la fecha de entrada en vigor indicada.
+aicentos podrá actualizar esta política conforme a las reglas comerciales, a los requisitos de los canales de pago o a la legislación aplicable. La versión actualizada surtirá efecto una vez publicada en la plataforma o en la fecha de entrada en vigor indicada.
 
 ## 8. Contacto
 
-Si necesita solicitar un reembolso, una conversión o una compensación, escriba a **support@fishxcode.com** o contacte con el asistente del grupo.
+Si necesita solicitar un reembolso, una conversión o una compensación, escriba a **aicentos** o contacte con el asistente del grupo.

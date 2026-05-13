@@ -1,19 +1,19 @@
 ---
 layout: home
-title: FishXCode - Relé AI Coding
+title: aicentos - Relé AI Coding
 description: Relé AI Coding para usar modelos Claude e Codex em múltiplas plataformas.
 
 hero:
-  name: "FishXCode"
+  name: "aicentos"
   text: "Estação AI Coding"
   tagline: Use modelos Claude e Codex em múltiplas plataformas
   image:
     src: /img/logo.svg
-    alt: FishXCode Logo
+    alt: aicentos Logo
   actions:
     - theme: brand
       text: Cadastrar
-      link: https://fishxcode.com/register?aff=9CTW
+      link: https://www.aicentos.com/sign-up
     - theme: alt
       text: Documentação
       link: /pt/start

@@ -1,6 +1,6 @@
 ---
 title: Estado de salud de los grupos
-description: Estado de salud de grupos en FishXCode, detalles de tokens de equipo, columnas de exportacion y flujo de diagnostico.
+description: Estado de salud de grupos en aicentos, detalles de tokens de equipo, columnas de exportacion y flujo de diagnostico.
 ---
 
 # Estado de salud de los grupos
@@ -14,22 +14,22 @@ El estado de salud de los grupos sirve para saber si una anomalia es de una soli
 Al diagnosticar errores de API, revisa primero el estado del grupo y luego entra al registro individual para ubicar el `request_id`.
 
 ::: info Alcance de los datos
-La pagina publica `status` incrustada aqui consulta el estado de salud de los grupos usados por todos los usuarios de FishXCode durante el periodo seleccionado. Refleja la disponibilidad global de los grupos de la plataforma y es en tiempo real, imparcial y estable.
+La pagina publica `status` incrustada aqui consulta el estado de salud de los grupos usados por todos los usuarios de aicentos durante el periodo seleccionado. Refleja la disponibilidad global de los grupos de la plataforma y es en tiempo real, imparcial y estable.
 
 La vista **Registros de uso -> Estado de salud de grupos** dentro de la consola muestra los datos visibles segun los permisos de la cuenta actual. Un usuario personal normalmente solo ve sus propios tokens; los administradores de empresa y equipo pueden revisar el uso por usuario, nombre de usuario, token y grupo.
 :::
 
 <iframe
-  src="https://status.fishxcode.com/group/global?view=list&sort=group&window=24h"
-  title="Estado de salud de grupos FishXCode"
+  src="https://www.aicentos.com/group/global?view=list&sort=group&window=24h"
+  title="Estado de salud de grupos aicentos"
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"
   style="width: 100%; height: 720px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-soft);"
 ></iframe>
 
-Si la pagina de estado no carga correctamente arriba, abre directamente [Estado de salud de grupos FishXCode](https://status.fishxcode.com/group/global?view=list&sort=group&window=24h).
+Si la pagina de estado no carga correctamente arriba, abre directamente [Estado de salud de grupos aicentos](https://www.aicentos.com/group/global?view=list&sort=group&window=24h).
 
-Entrada de consola: [Consola -> Registros de uso](https://fishxcode.com/console/log). En registros de error o vistas estadisticas, filtra por periodo, modelo, Token, grupo, mensaje de error y codigo de estado.
+Entrada de consola: [Consola -> Registros de uso](https://www.aicentos.com/console/log). En registros de error o vistas estadisticas, filtra por periodo, modelo, Token, grupo, mensaje de error y codigo de estado.
 
 ## Ejemplo de consola
 

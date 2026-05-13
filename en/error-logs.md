@@ -1,13 +1,13 @@
 ---
 title: Error Logs
-description: FishXCode console error log fields, status codes, common errors, and troubleshooting flow.
+description: aicentos console error log fields, status codes, common errors, and troubleshooting flow.
 ---
 
 # Error Logs
 
 Error logs help identify why a specific request failed. When troubleshooting, check [Group Health](/en/group-health) first to understand the impact scope, then use the `request_id` in the error log to locate the exact request.
 
-Entry: [Console -> Usage Logs](https://fishxcode.com/console/log). Switch the log type to **Error logs**, then filter by time range, model, token, group, request ID, error message, or status code.
+Entry: [Console -> Usage Logs](https://www.aicentos.com/console/log). Switch the log type to **Error logs**, then filter by time range, model, token, group, request ID, error message, or status code.
 
 ::: tip Quick checks
 - `request_id` locates one specific request

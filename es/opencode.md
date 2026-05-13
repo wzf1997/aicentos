@@ -1,4 +1,4 @@
-# Usar FishXCode con OpenCode
+# Usar aicentos con OpenCode
 
 ## Instalar OpenCode
 
@@ -18,19 +18,19 @@ scoop install opencode
 
 :::
 
-## Configurar FishXCode
+## Configurar aicentos
 
-1. Obtén tu API Key en [https://fishxcode.com/console/token](https://fishxcode.com/console/token)
+1. Obtén tu API Key en [aicentos](https://www.aicentos.com/console/token)
 2. Configura la variable de entorno:
 
 ::: code-group
 
 ```bash [Linux/macOS]
-export FISHXCODE_TOKEN=sk-xxx
+export AICENTOS_TOKEN=sk-xxx
 ```
 
 ```powershell [Windows PowerShell]
-$env:FISHXCODE_TOKEN="sk-xxx"
+$env:AICENTOS_TOKEN="sk-xxx"
 ```
 
 :::
@@ -41,12 +41,12 @@ $env:FISHXCODE_TOKEN="sk-xxx"
 {
   "$schema": "https://opencode.ai/config.json",
   "provider": {
-    "fishxcode-anthropic": {
+    "aicentos-anthropic": {
       "npm": "@ai-sdk/anthropic",
-      "name": "fishxcode-anthropic",
+      "name": "aicentos-anthropic",
       "options": {
-        "baseURL": "https://fishxcode.com/v1",
-        "apiKey": "{env:FISHXCODE_TOKEN}"
+        "baseURL": "https://www.aicentos.com/v1",
+        "apiKey": "{env:AICENTOS_TOKEN}"
       },
       "models": {
         "claude-sonnet-4-6": {
@@ -54,12 +54,12 @@ $env:FISHXCODE_TOKEN="sk-xxx"
         }
       }
     },
-    "fishxcode-openai": {
+    "aicentos-openai": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "fishxcode-openai",
+      "name": "aicentos-openai",
       "options": {
-        "baseURL": "https://fishxcode.com/v1",
-        "apiKey": "{env:FISHXCODE_TOKEN}"
+        "baseURL": "https://www.aicentos.com/v1",
+        "apiKey": "{env:AICENTOS_TOKEN}"
       },
       "models": {
         "gpt-5.2-codex": {
@@ -72,7 +72,7 @@ $env:FISHXCODE_TOKEN="sk-xxx"
 ```
 
 ::: warning Importante
-Reemplaza `sk-xxx` por tu token real obtenido en la [consola de FishXCode](https://fishxcode.com/console/token).
+Reemplaza `sk-xxx` por tu token real obtenido en la [consola de aicentos](https://www.aicentos.com/console/token).
 :::
 
 ## Iniciar
@@ -82,4 +82,4 @@ cd my-project
 opencode
 ```
 
-Una vez iniciado, selecciona un modelo del proveedor FishXCode para comenzar.
+Una vez iniciado, selecciona un modelo del proveedor aicentos para comenzar.

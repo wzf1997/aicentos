@@ -1,6 +1,6 @@
 ---
 title: 账户注册与管理
-description: FishXCode 账户注册、API Key 获取、充值与账户安全指南。
+description: aicentos 账户注册、API Key 获取、充值与账户安全指南。
 ---
 
 # 账户注册与管理
@@ -12,45 +12,45 @@ description: FishXCode 账户注册、API Key 获取、充值与账户安全指�
 
 ### 1. 注册账号
 
-访问 [fishxcode.com](https://fishxcode.com/register?aff=9CTW)，点击**注册**：
+访问 [aicentos](https://www.aicentos.com/sign-up)，点击**注册**：
 
-![FishXCode 首页](/img/start/api-01-home.png)
+![aicentos](/img/start/api-01-home-1.png)
 
 选择注册方式（GitHub、LinuxDO 或用户名注册）：
 
-![注册方式选择](/img/start/api-02-register.png)
+![注册方式选择](/img/start/api-02-register-1.png)
 
 填写用户名、密码和确认密码完成注册：
 
-![填写注册信息](/img/start/api-03-register-form.png)
+![填写注册信息](/img/start/api-03-register-form-1.png)
 
 ### 2. 登录
 
 注册完成后使用用户名和密码登录：
 
-![登录页面](/img/start/api-04-login.png)
+![登录页面](/img/start/api-04-login-1.png)
 
 登录后进入控制台：
 
-![控制台首页](/img/start/api-05-console.png)
+![控制台首页](/img/start/api-05-console-1.png)
 
 ### 3. 创建令牌
 
 进入**控制台 → 令牌管理 → 添加令牌**，填写表单：
 
-![添加令牌](/img/start/api-06-token-create.png)
+![添加令牌](/img/start/api-06-token-create-1.png)
 
-- **令牌分组**建议选择 **官渠**，该分组包含全系列 Claude 模型，会根据任务复杂度自动选择，无需手动切换。具体渠道和模型以官网实际为准，请前往 [定价页](https://fishxcode.com/pricing) 查看最新信息。
+- **令牌分组**建议选择 **官渠**，该分组包含全系列 Claude 模型，会根据任务复杂度自动选择，无需手动切换。具体渠道和模型以官网实际为准，请前往 [定价页](https://www.aicentos.com/pricing) 查看最新信息。
 
 创建完成后在令牌列表点击**复制**按钮获取 API Key（格式为 `sk-xxx`）：
 
-![复制令牌](/img/start/api-07-token-copy.png)
+![复制令牌](/img/start/api-07-token-copy-1.png)
 
 ### 4. 充值
 
 进入**控制台 → 钱包管理**，支持支付宝、微信或兑换码：
 
-![充值页面](/img/start/api-08-wallet.png)
+![充值页面](/img/start/api-08-wallet-1.png)
 
 | 方式 | 操作路径 |
 |---|---|
@@ -110,7 +110,7 @@ description: FishXCode 账户注册、API Key 获取、充值与账户安全指�
 
 ### 第三方登录绑定
 
-FishXCode 支持以下第三方登录方式：
+aicentos 支持以下第三方登录方式：
 
 | 方式 | 说明 |
 |---|---|
@@ -128,7 +128,7 @@ FishXCode 支持以下第三方登录方式：
 3. **余额异常扣减** → 在使用日志中排查具体调用记录，确认是否为正常消耗
 
 ::: tip 联系支持
-遇到账户异常问题，请通过 [联系我们](https://fishxcode.com/contact) 页面获取帮助。
+遇到账户异常问题，请通过 [联系我们](https://www.aicentos.com/contact) 页面获取帮助。
 :::
 
 ---

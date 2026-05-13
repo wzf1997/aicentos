@@ -1,18 +1,18 @@
 ---
 title: Navegação da plataforma e guia do sistema
-description: Arquitetura FishXCode, funcionalidades do console, rotas e referência documental.
+description: Arquitetura aicentos, funcionalidades do console, rotas e referência documental.
 ---
 
 # Navegação da plataforma e guia do sistema
 
-> Esta página apresenta a estrutura geral da plataforma FishXCode para ajudá-lo a localizar rapidamente a funcionalidade desejada.
+> Esta página apresenta a estrutura geral da plataforma aicentos para ajudá-lo a localizar rapidamente a funcionalidade desejada.
 > Precisa criar uma conta? Consulte [Configuração de conta e gestão](/pt/account).
 
 ## 1. Visão geral
 
-O FishXCode é uma plataforma de acesso a IA voltada para desenvolvedores e equipes. Pense nele como um ponto de entrada unificado: na parte pública estão o site, a página de preços e a documentação; na parte interna estão o console, os tokens, a recarga, as faturas e os registros de uso.
+O aicentos é uma plataforma de acesso a IA voltada para desenvolvedores e equipes. Pense nele como um ponto de entrada unificado: na parte pública estão o site, a página de preços e a documentação; na parte interna estão o console, os tokens, a recarga, as faturas e os registros de uso.
 
-A plataforma oferece serviços de intermediação para os principais modelos de IA. Os canais e modelos disponíveis estão sujeitos a alterações — consulte a [página de Preços](https://fishxcode.com/pricing) para informações atualizadas. Desde o registro até a criação de tokens, escolha de planos, integração com ferramentas e acompanhamento de consumo, todo o fluxo é realizado dentro do mesmo sistema.
+A plataforma oferece serviços de intermediação para os principais modelos de IA. Os canais e modelos disponíveis estão sujeitos a alterações — consulte a [página de Preços](https://www.aicentos.com/pricing) para informações atualizadas. Desde o registro até a criação de tokens, escolha de planos, integração com ferramentas e acompanhamento de consumo, todo o fluxo é realizado dentro do mesmo sistema.
 
 ---
 
@@ -73,7 +73,7 @@ Após o login, todas as operações são realizadas no console. Localize rapidam
 
 ## 4. Referência documental
 
-`/docs` é a central de documentação do FishXCode. O conteúdo corresponde diretamente às páginas deste site de documentação:
+`/docs` é a central de documentação do aicentos. O conteúdo corresponde diretamente às páginas deste site de documentação:
 
 | Página de documentação | Rota | Conteúdo |
 | --- | --- | --- |

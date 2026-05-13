@@ -1,6 +1,6 @@
 # Modelos compatibles
 
-FishXCode es compatible con una variedad de modelos de IA de multiples proveedores, cubriendo diferentes casos de uso y cadenas de herramientas. Puedes elegir y cambiar de modelo libremente segun tus necesidades.
+aicentos es compatible con una variedad de modelos de IA de multiples proveedores, cubriendo diferentes casos de uso y cadenas de herramientas. Puedes elegir y cambiar de modelo libremente segun tus necesidades.
 
 <DynamicModelList />
 

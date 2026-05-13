@@ -1,25 +1,25 @@
 <p align="center">
-  <img src="https://doc.fishxcode.com/img/logo.svg" width="120" alt="FishXCode Logo">
+  <img src="https://www.aicentos.com/img/logo.svg" width="120" alt="aicentos Logo">
 </p>
 
-<h1 align="center">FishXCode</h1>
+<h1 align="center">aicentos</h1>
 
 <p align="center">
   AI Coding 中转站 — 支持 Claude、Codex 模型在多种平台使用
 </p>
 
 <p align="center">
-  <a href="https://doc.fishxcode.com">文档</a> ·
-  <a href="https://doc.fishxcode.com/en/">English</a> ·
-  <a href="https://fishxcode.com/register?aff=9CTW">注册</a> ·
-  <a href="https://doc.fishxcode.com/faq">FAQ</a>
+  <a href="https://www.aicentos.com/">文档</a> ·
+  <a href="https://www.aicentos.com/en/">English</a> ·
+  <a href="https://www.aicentos.com/sign-up">注册</a> ·
+  <a href="https://www.aicentos.com/faq">FAQ</a>
 </p>
 
 ---
 
 ## 简介
 
-FishXCode 是一个 AI Coding 中转站，支持 Claude、Codex 模型在多种平台使用。
+aicentos 是一个 AI Coding 中转站，支持 Claude、Codex 模型在多种平台使用。
 
 **支持的工具：**
 

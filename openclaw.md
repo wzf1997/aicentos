@@ -1,4 +1,4 @@
-# 在 OpenClaw 中使用 FishXCode
+# 在 OpenClaw 中使用 aicentos
 
 ::: info 项目简介
 OpenClaw 是一个开源、自托管的个人 AI 助手平台，将消息应用连接到运行在你自己硬件上的 AI Agent。专为希望在不放弃数据控制权的前提下使用自主 AI 助手的开发者和高级用户设计。
@@ -11,7 +11,7 @@ OpenClaw 是一个开源、自托管的个人 AI 助手平台，将消息应用�
 ## 前提条件
 
 - 已安装 OpenClaw（参考下方安装章节）
-- 已获取 FishXCode API Key（[控制台获取](https://fishxcode.com/console/token)）
+- 已获取 aicentos API Key（[控制台获取](https://www.aicentos.com/console/token)）
 
 ## 核心特性
 
@@ -39,7 +39,7 @@ OpenClaw 是一个开源、自托管的个人 AI 助手平台，将消息应用�
 ## 安装
 
 ::: info 环境要求
-- FishXCode API Key
+- aicentos API Key
 - 使用 npm/git 方式需要 Node.js 22+；curl 一键安装会自动处理依赖
 :::
 
@@ -137,9 +137,9 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
   "models": {
     "mode": "merge",
     "providers": {
-      "fishxcode-anthropic": {
-        "baseUrl": "https://fishxcode.com",
-        "apiKey": "sk-你的FishXCode-Token",
+      "aicentos-anthropic": {
+        "baseUrl": "https://www.aicentos.com/",
+        "apiKey": "sk-你的Aicentos-Token",
         "api": "anthropic-messages",
         "models": [
           {
@@ -157,7 +157,7 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
   "agents": {
     "defaults": {
       "model": {
-        "primary": "fishxcode-anthropic/claude-opus-4-6"
+        "primary": "aicentos-anthropic/claude-opus-4-6"
       }
     }
   }
@@ -165,22 +165,22 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
 ```
 
 ::: warning 重要
-- 请将 `sk-你的FishXCode-Token` 替换为你在 [FishXCode 控制台](https://fishxcode.com/console/token) 获取的实际 Token
+- 请将 `sk-你的Aicentos-Token` 替换为你在 [aicentos 控制台](https://www.aicentos.com/console/token) 获取的实际 Token
 - **Anthropic 协议的 `baseUrl` 不要带 `/v1`**，SDK 会自动拼接路径
 :::
 
 #### 配置 OpenAI（GPT）模型
 
-通过 FishXCode 调用 OpenAI 模型时，`api` 字段须设为 `openai-responses`：
+通过 aicentos 调用 OpenAI 模型时，`api` 字段须设为 `openai-responses`：
 
 ```json
 {
   "models": {
     "mode": "merge",
     "providers": {
-      "fishxcode-openai": {
-        "baseUrl": "https://fishxcode.com/v1",
-        "apiKey": "sk-你的FishXCode-Token",
+      "aicentos-openai": {
+        "baseUrl": "https://www.aicentos.com/v1",
+        "apiKey": "sk-你的Aicentos-Token",
         "api": "openai-responses",
         "models": [
           {
@@ -198,7 +198,7 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
   "agents": {
     "defaults": {
       "model": {
-        "primary": "fishxcode-openai/gpt-5"
+        "primary": "aicentos-openai/gpt-5"
       }
     }
   }
@@ -206,7 +206,7 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
 ```
 
 ::: tip 提示
-**OpenAI 协议需要带 `/v1`**，即 `https://fishxcode.com/v1`。这是因为两种 SDK 的路径拼接逻辑不同。
+**OpenAI 协议需要带 `/v1`**，即 `https://www.aicentos.com/v1`。这是因为两种 SDK 的路径拼接逻辑不同。
 :::
 
 #### 同时配置 Anthropic + OpenAI（推荐）
@@ -218,9 +218,9 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
   "models": {
     "mode": "merge",
     "providers": {
-      "fishxcode-anthropic": {
-        "baseUrl": "https://fishxcode.com",
-        "apiKey": "sk-你的FishXCode-Token",
+      "aicentos-anthropic": {
+        "baseUrl": "https://www.aicentos.com/",
+        "apiKey": "sk-你的Aicentos-Token",
         "api": "anthropic-messages",
         "models": [
           {
@@ -241,9 +241,9 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
           }
         ]
       },
-      "fishxcode-openai": {
-        "baseUrl": "https://fishxcode.com/v1",
-        "apiKey": "sk-你的FishXCode-Token",
+      "aicentos-openai": {
+        "baseUrl": "https://www.aicentos.com/v1",
+        "apiKey": "sk-你的Aicentos-Token",
         "api": "openai-responses",
         "models": [
           {
@@ -269,10 +269,10 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
   "agents": {
     "defaults": {
       "model": {
-        "primary": "fishxcode-anthropic/claude-opus-4-6",
+        "primary": "aicentos-anthropic/claude-opus-4-6",
         "fallbacks": [
-          "fishxcode-anthropic/claude-sonnet-4-5-20250929",
-          "fishxcode-openai/gpt-5"
+          "aicentos-anthropic/claude-sonnet-4-5-20250929",
+          "aicentos-openai/gpt-5"
         ]
       }
     }
@@ -282,21 +282,21 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
 
 切换默认模型时，只需修改 `model.primary` 的值：
 
-- `"fishxcode-anthropic/claude-opus-4-6"` → Claude Opus 4.6
-- `"fishxcode-anthropic/claude-sonnet-4-5-20250929"` → Claude Sonnet 4.5
-- `"fishxcode-openai/gpt-5"` → GPT-5
-- `"fishxcode-openai/gpt-5-codex"` → GPT-5 Codex
+- `"aicentos-anthropic/claude-opus-4-6"` → Claude Opus 4.6
+- `"aicentos-anthropic/claude-sonnet-4-5-20250929"` → Claude Sonnet 4.5
+- `"aicentos-openai/gpt-5"` → GPT-5
+- `"aicentos-openai/gpt-5-codex"` → GPT-5 Codex
 
 ### 关键字段说明
 
 | 字段 | 含义 | Anthropic（Claude） | OpenAI（GPT） |
 | --- | --- | --- | --- |
-| `baseUrl` | API 代理地址 | `https://fishxcode.com` | `https://fishxcode.com/v1` |
-| `apiKey` | 你的 API Key | `sk-你的FishXCode-Token` | `sk-你的FishXCode-Token` |
+| `baseUrl` | API 代理地址 | `https://www.aicentos.com/` | `https://www.aicentos.com/v1` |
+| `apiKey` | 你的 API Key | `sk-你的Aicentos-Token` | `sk-你的Aicentos-Token` |
 | `api` | API 协议类型 | `anthropic-messages` | `openai-responses` |
 | `mode` | 配置合并模式 | `merge`（推荐） | `merge`（推荐） |
 | `models[].id` | 模型 ID | `claude-opus-4-6` | `gpt-5` |
-| `model.primary` | 默认模型 | `fishxcode-anthropic/claude-opus-4-6` | `fishxcode-openai/gpt-5` |
+| `model.primary` | 默认模型 | `aicentos-anthropic/claude-opus-4-6` | `aicentos-openai/gpt-5` |
 | `reasoning` | 是否启用推理模式 | `false`（根据模型而定） | `true`（GPT-5.x 支持） |
 
 ## 验证配置
@@ -307,7 +307,7 @@ New-Item -ItemType File -Force -Path "$env:USERPROFILE\.openclaw\openclaw.json"
 openclaw
 ```
 
-如果配置正确，OpenClaw 将正常启动并通过 FishXCode 代理发送请求。
+如果配置正确，OpenClaw 将正常启动并通过 aicentos 代理发送请求。
 
 也可以用以下命令检查模型列表：
 
@@ -355,8 +355,8 @@ openclaw gateway restart
 
 ```json
 {
-  "fishxcode-anthropic": {
-    "baseUrl": "https://fishxcode.com",
+  "aicentos-anthropic": {
+    "baseUrl": "https://www.aicentos.com/",
     "apiKey": "your-api-key",
     "api": "anthropic-messages",
     "headers": {
@@ -377,12 +377,12 @@ openclaw gateway restart
 
 ```json
 {
-  "baseUrl": "https://fishxcode.com"
+  "baseUrl": "https://www.aicentos.com/"
 }
 ```
 
 ::: tip 提示
-OpenAI 协议需要带 `/v1`，即 `https://fishxcode.com/v1`。这是因为两种 SDK 的路径拼接逻辑不同。
+OpenAI 协议需要带 `/v1`，即 `https://www.aicentos.com/v1`。这是因为两种 SDK 的路径拼接逻辑不同。
 :::
 
 ### api 字段只认三个值
@@ -399,7 +399,7 @@ OpenAI 协议需要带 `/v1`，即 `https://fishxcode.com/v1`。这是因为两�
 
 写成 `openai-chat`、`openai`、`anthropic` 等都会报错。
 
-**解决**：通过 FishXCode 使用时，Claude 模型填 `anthropic-messages`，GPT 模型填 `openai-responses`。
+**解决**：通过 aicentos 使用时，Claude 模型填 `anthropic-messages`，GPT 模型填 `openai-responses`。
 
 ### openai-completions 收到空回复（不要用于 GPT 模型）
 
@@ -407,7 +407,7 @@ OpenAI 协议需要带 `/v1`，即 `https://fishxcode.com/v1`。这是因为两�
 
 **原因**：OpenClaw 内部使用 Anthropic 格式处理消息流，`openai-completions` 返回的 OpenAI 格式响应在某些情况下无法正确映射。
 
-**解决**：通过 FishXCode 调用 GPT 模型时，请使用 `openai-responses` 而非 `openai-completions`。
+**解决**：通过 aicentos 调用 GPT 模型时，请使用 `openai-responses` 而非 `openai-completions`。
 
 ### 配置了但没生效
 
@@ -457,8 +457,8 @@ GPT-5.x Codex 系列通常支持 `reasoning`，Claude 模型根据版本而定�
 
 ### openai-completions 和 openai-responses 有什么区别？
 
-- **openai-responses** — 对应 OpenAI Responses API（`/v1/responses`）。**通过 FishXCode 使用 GPT 模型时用这个。**
-- **openai-completions** — 对应 OpenAI Chat Completions API（`/v1/chat/completions`），通用兼容格式，但在 FishXCode 的 GPT 模型上可能导致空回复，**不推荐使用**。
+- **openai-responses** — 对应 OpenAI Responses API（`/v1/responses`）。**通过 aicentos 使用 GPT 模型时用这个。**
+- **openai-completions** — 对应 OpenAI Chat Completions API（`/v1/chat/completions`），通用兼容格式，但在 aicentos 的 GPT 模型上可能导致空回复，**不推荐使用**。
 
 ### 排查工具速查
 
@@ -470,5 +470,5 @@ GPT-5.x Codex 系列通常支持 `reasoning`，Claude 模型根据版本而定�
 | `openclaw gateway restart` | 重启 Gateway |
 
 ::: tip 排查核心思路
-先用 curl 确认 FishXCode API 本身正常，再检查 OpenClaw 端发出的请求有什么不同（UA、路径、格式）。
+先用 curl 确认 aicentos API 本身正常，再检查 OpenClaw 端发出的请求有什么不同（UA、路径、格式）。
 :::

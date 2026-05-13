@@ -1,9 +1,9 @@
-# Usar FishXCode con RooCode
+# Usar aicentos con RooCode
 
 ## Instalación en VSCode
 
 1. Busca [RooCode](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline) en VSCode e instálalo
-2. Visita [https://fishxcode.com/console/token](https://fishxcode.com/console/token) para obtener tu API Key
+2. Visita [aicentos](https://www.aicentos.com/console/token) para obtener tu API Key
 
 ## Agregar Proveedor
 
@@ -11,8 +11,8 @@ Abre RooCode y agrega un proveedor compatible con OpenAI:
 
 | Configuración | Valor |
 |---------------|-------|
-| **URL base de OpenAI** | `https://fishxcode.com/v1` |
-| **API Key** | Tu clave de FishXCode |
+| **URL base de OpenAI** | `https://www.aicentos.com/v1` |
+| **API Key** | Tu clave de aicentos |
 | **Modelo** | `gpt-5` |
 
 ::: tip Consejo

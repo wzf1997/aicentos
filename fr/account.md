@@ -1,6 +1,6 @@
 ---
 title: Création de compte et gestion
-description: Inscription FishXCode, obtention de clé API, recharge et sécurité du compte.
+description: Inscription aicentos, obtention de clé API, recharge et sécurité du compte.
 ---
 
 # Création de compte et gestion
@@ -12,9 +12,9 @@ description: Inscription FishXCode, obtention de clé API, recharge et sécurit�
 
 ### 1. Créer un compte
 
-Rendez-vous sur [fishxcode.com](https://fishxcode.com/register?aff=9CTW) et cliquez sur **S'inscrire** :
+Rendez-vous sur [aicentos](https://www.aicentos.com/sign-up) et cliquez sur **S'inscrire** :
 
-![Page d'accueil FishXCode](/img/start/api-01-home.png)
+![Page d'accueil aicentos](/img/start/api-01-home.png)
 
 Choisissez votre méthode d'inscription (GitHub, LinuxDO ou nom d'utilisateur) :
 
@@ -40,7 +40,7 @@ Allez dans **Console → Gestion des tokens → Ajouter un token** et remplissez
 
 ![Ajouter un token](/img/start/api-06-token-create.png)
 
-- Pour le **groupe de tokens**, choisissez de préférence le **canal officiel**. Ce groupe inclut l'ensemble des modèles Claude et sélectionne automatiquement le modèle selon la complexité de la tâche. Les canaux et modèles disponibles sont susceptibles de changer — consultez la [page Tarifs](https://fishxcode.com/pricing) pour les informations à jour.
+- Pour le **groupe de tokens**, choisissez de préférence le **canal officiel**. Ce groupe inclut l'ensemble des modèles Claude et sélectionne automatiquement le modèle selon la complexité de la tâche. Les canaux et modèles disponibles sont susceptibles de changer — consultez la [page Tarifs](https://www.aicentos.com/pricing) pour les informations à jour.
 
 Une fois créé, cliquez sur le bouton **Copier** dans la liste des tokens pour récupérer votre clé API (format : `sk-xxx`) :
 
@@ -110,7 +110,7 @@ La suppression est irréversible. Assurez-vous de ne plus utiliser le token avan
 
 ### Connexion tierce
 
-FishXCode prend en charge les méthodes de connexion tierces suivantes :
+aicentos prend en charge les méthodes de connexion tierces suivantes :
 
 | Méthode | Description |
 |---|---|
@@ -128,7 +128,7 @@ Si vous constatez l'une des situations suivantes, nous vous recommandons d'agir 
 3. **Déduction de solde anormale** → Consultez le journal d'utilisation pour vérifier les appels enregistrés et confirmer s'il s'agit d'une consommation normale
 
 ::: tip Contacter le support
-En cas d'anomalie sur votre compte, rendez-vous sur la page [Nous contacter](https://fishxcode.com/contact) pour obtenir de l'aide.
+En cas d'anomalie sur votre compte, rendez-vous sur la page [Nous contacter](https://www.aicentos.com/contact) pour obtenir de l'aide.
 :::
 
 ---

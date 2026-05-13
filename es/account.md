@@ -1,6 +1,6 @@
 ---
 title: Registro de cuenta y gestión
-description: Registro en FishXCode, obtención de API Key, recarga y seguridad de cuenta.
+description: Registro en aicentos, obtención de API Key, recarga y seguridad de cuenta.
 ---
 
 # Registro de cuenta y gestión
@@ -12,45 +12,45 @@ description: Registro en FishXCode, obtención de API Key, recarga y seguridad d
 
 ### 1. Registrarse
 
-Visita [fishxcode.com](https://fishxcode.com/register?aff=9CTW) y haz clic en **Registrarse**:
+Visita [aicentos](https://www.aicentos.com/sign-up) y haz clic en **Registrarse**:
 
-![Página de inicio de FishXCode](/img/start/api-01-home.png)
+![Página de inicio de aicentos](/img/start/api-01-home-1.png)
 
 Elige el método de registro (GitHub, LinuxDO o nombre de usuario):
 
-![Selección del método de registro](/img/start/api-02-register.png)
+![Selección del método de registro](/img/start/api-02-register-1.png)
 
 Completa el formulario con nombre de usuario, contraseña y confirmación de contraseña:
 
-![Formulario de registro](/img/start/api-03-register-form.png)
+![Formulario de registro](/img/start/api-03-register-form-1.png)
 
 ### 2. Iniciar sesión
 
 Una vez registrado, inicia sesión con tu nombre de usuario y contraseña:
 
-![Página de inicio de sesión](/img/start/api-04-login.png)
+![Página de inicio de sesión](/img/start/api-04-login-1.png)
 
 Tras iniciar sesión, accederás a la consola:
 
-![Página principal de la consola](/img/start/api-05-console.png)
+![Página principal de la consola](/img/start/api-05-console-1.png)
 
 ### 3. Crear un token
 
 Ve a **Consola → Gestión de tokens → Agregar token** y rellena el formulario:
 
-![Agregar token](/img/start/api-06-token-create.png)
+![Agregar token](/img/start/api-06-token-create-1.png)
 
-- En **Grupo de tokens**, se recomienda seleccionar el **canal oficial**. Este grupo incluye toda la gama de modelos Claude y selecciona automáticamente el modelo según la complejidad de la tarea. Los canales y modelos disponibles están sujetos a cambios — consulta la [página de Precios](https://fishxcode.com/pricing) para información actualizada.
+- En **Grupo de tokens**, se recomienda seleccionar el **canal oficial**. Este grupo incluye toda la gama de modelos Claude y selecciona automáticamente el modelo según la complejidad de la tarea. Los canales y modelos disponibles están sujetos a cambios — consulta la [página de Precios](https://www.aicentos.com/pricing) para información actualizada.
 
 Una vez creado, haz clic en el botón **Copiar** en la lista de tokens para obtener tu API Key (formato: `sk-xxx`):
 
-![Copiar token](/img/start/api-07-token-copy.png)
+![Copiar token](/img/start/api-07-token-copy-1.png)
 
 ### 4. Recargar saldo
 
 Ve a **Consola → Gestión de billetera**. Se admite Alipay, WeChat o código de canje:
 
-![Página de recarga](/img/start/api-08-wallet.png)
+![Página de recarga](/img/start/api-08-wallet-1.png)
 
 | Método | Ruta |
 |---|---|
@@ -110,7 +110,7 @@ La eliminación no se puede deshacer. Asegúrate de que ya no necesitas el token
 
 ### Inicio de sesión con terceros
 
-FishXCode admite los siguientes métodos de inicio de sesión con terceros:
+aicentos admite los siguientes métodos de inicio de sesión con terceros:
 
 | Método | Descripción |
 |---|---|
@@ -128,7 +128,7 @@ Si detectas alguna de las siguientes situaciones anómalas, te recomendamos actu
 3. **Descuento anómalo del saldo** → Revisa los registros de uso para identificar las llamadas concretas y confirmar si se trata de un consumo normal
 
 ::: tip Contactar con soporte
-Si tienes problemas con tu cuenta, accede a la página [Contacto](https://fishxcode.com/contact) para obtener ayuda.
+Si tienes problemas con tu cuenta, accede a la página [Contacto](https://www.aicentos.com/contact) para obtener ayuda.
 :::
 
 ---

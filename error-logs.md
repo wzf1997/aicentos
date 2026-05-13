@@ -1,13 +1,13 @@
 ---
 title: 错误日志说明
-description: FishXCode 控制台错误日志字段、状态码含义、常见错误和排障流程。
+description: aicentos 控制台错误日志字段、状态码含义、常见错误和排障流程。
 ---
 
 # 错误日志说明
 
 错误日志用于定位单次请求失败的具体原因。排查时建议先查看 [分组健康状态](/group-health) 判断影响范围，再用错误日志里的 `request_id` 定位单条请求。
 
-入口：[控制台 → 使用日志](https://fishxcode.com/console/log)。将日志类型切换为 **错误日志** 后，可按时间、模型、Token、分组、请求 ID、错误消息和状态码筛选。
+入口：[控制台 → 使用日志](https://www.aicentos.com/console/log)。将日志类型切换为 **错误日志** 后，可按时间、模型、Token、分组、请求 ID、错误消息和状态码筛选。
 
 ::: tip 快速判断
 - `request_id` 用于定位单条请求

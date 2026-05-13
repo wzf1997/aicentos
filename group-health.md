@@ -1,6 +1,6 @@
 ---
 title: 分组健康状态
-description: FishXCode 分组健康状态、团队令牌明细、导出字段和排障流程。
+description: aicentos 分组健康状态、团队令牌明细、导出字段和排障流程。
 ---
 
 # 分组健康状态
@@ -14,22 +14,22 @@ description: FishXCode 分组健康状态、团队令牌明细、导出字段和
 排查接口异常时，先看分组健康状态，再进入单条使用日志定位具体 `request_id`。
 
 ::: info 数据口径
-本页嵌入的公开 `status` 页面查询的是所选时间段内 FishXCode 整个平台所有用户正在使用的分组健康状态，反映全平台分组可用性，具备实时性、公正性和稳定性。
+本页嵌入的公开 `status` 页面查询的是所选时间段内 aicentos 整个平台所有用户正在使用的分组健康状态，反映全平台分组可用性，具备实时性、公正性和稳定性。
 
 控制台内的 **使用日志 → 分组健康状态** 按当前账号权限统计可见数据。个人用户通常只看到自己的 Token；企业和团队管理员可结合用户、用户名、令牌和分组维度查看团队使用情况。
 :::
 
 <iframe
-  src="https://status.fishxcode.com/group/global?view=list&sort=group&window=24h"
-  title="FishXCode 分组健康状态"
+  src="https://www.aicentos.com/group/global?view=list&sort=group&window=24h"
+  title="aicentos 分组健康状态"
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"
   style="width: 100%; height: 720px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-soft);"
 ></iframe>
 
-如果上方状态页未正常加载，可直接打开 [FishXCode 分组健康状态](https://status.fishxcode.com/group/global?view=list&sort=group&window=24h)。
+如果上方状态页未正常加载，可直接打开 [aicentos 分组健康状态](https://www.aicentos.com/group/global?view=list&sort=group&window=24h)。
 
-控制台入口：[控制台 → 使用日志](https://fishxcode.com/console/log)。在错误日志或统计视图中，按时间范围、模型、Token、分组、错误消息和状态码筛选。
+控制台入口：[控制台 → 使用日志](https://www.aicentos.com/console/log)。在错误日志或统计视图中，按时间范围、模型、Token、分组、错误消息和状态码筛选。
 
 ## 控制台示例
 

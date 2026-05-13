@@ -1,6 +1,6 @@
 ---
 title: Configuração de conta e gestão
-description: Registro no FishXCode, obtenção de API Key, recarga e segurança da conta.
+description: Registro no aicentos, obtenção de API Key, recarga e segurança da conta.
 ---
 
 # Configuração de conta e gestão
@@ -12,9 +12,9 @@ description: Registro no FishXCode, obtenção de API Key, recarga e segurança 
 
 ### 1. Criar conta
 
-Acesse [fishxcode.com](https://fishxcode.com/register?aff=9CTW) e clique em **Registrar**:
+Acesse [aicentos](https://www.aicentos.com/sign-up) e clique em **Registrar**:
 
-![Página inicial do FishXCode](/img/start/api-01-home.png)
+![Página inicial do aicentos](/img/start/api-01-home.png)
 
 Escolha o método de registro (GitHub, LinuxDO ou nome de usuário):
 
@@ -40,7 +40,7 @@ Vá em **Console → Gerenciamento de tokens → Adicionar token** e preencha o 
 
 ![Adicionar token](/img/start/api-06-token-create.png)
 
-- Em **Grupo de tokens**, selecione o **canal oficial**. Este grupo inclui toda a linha de modelos Claude e seleciona automaticamente o modelo com base na complexidade da tarefa. Os canais e modelos disponíveis estão sujeitos a alterações — consulte a [página de Preços](https://fishxcode.com/pricing) para informações atualizadas.
+- Em **Grupo de tokens**, selecione o **canal oficial**. Este grupo inclui toda a linha de modelos Claude e seleciona automaticamente o modelo com base na complexidade da tarefa. Os canais e modelos disponíveis estão sujeitos a alterações — consulte a [página de Preços](https://www.aicentos.com/pricing) para informações atualizadas.
 
 Após a criação, clique em **Copiar** na lista de tokens para obter sua API Key (formato: `sk-xxx`):
 
@@ -110,7 +110,7 @@ A exclusão é irreversível. Confirme que o token não está mais em uso antes 
 
 ### Login com terceiros
 
-O FishXCode suporta os seguintes métodos de login com terceiros:
+O aicentos suporta os seguintes métodos de login com terceiros:
 
 | Método | Descrição |
 |---|---|
@@ -128,7 +128,7 @@ Se você identificar alguma das seguintes situações anormais, tome providênci
 3. **Dedução anormal de saldo** → consulte os registros de uso para verificar as chamadas específicas e confirmar se o consumo é legítimo
 
 ::: tip Contato com o suporte
-Em caso de problemas com a conta, acesse a página [Fale conosco](https://fishxcode.com/contact) para obter ajuda.
+Em caso de problemas com a conta, acesse a página [Fale conosco](https://www.aicentos.com/contact) para obter ajuda.
 :::
 
 ---

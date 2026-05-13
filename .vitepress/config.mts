@@ -5,8 +5,8 @@ import { Feed } from 'feed'
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs'
 import { resolve } from 'path'
 
-const SITE_URL = 'https://doc.fishxcode.com'
-const SITE_TITLE = 'FishXCode'
+const SITE_URL = 'https://www.aicentos.com'
+const SITE_TITLE = 'aicentos'
 const SITE_DESC = 'AI Coding 中转站 - 支持 Claude、Codex 模型在多种平台使用'
 
 const LOCALES = [
@@ -32,7 +32,7 @@ const VERIFICATION_META_TAGS = buildVerificationMetaTags()
 
 // GitHub Pages 子路径支持：
 //   - 本地开发 / Docker / 自定义域名：BASE = '/'
-//   - GitHub Pages 无自定义域名：CI 传入 VITEPRESS_BASE=/fishxcode/
+//   - GitHub Pages 无自定义域名：CI 传入 VITEPRESS_BASE=/aicentos/
 const BASE = (process.env.VITEPRESS_BASE ?? '/').replace(/([^/])$/, '$1/')
 
 /** 将站内绝对路径加上 base 前缀（供 head 标签使用，VitePress 不自动处理） */
@@ -160,7 +160,7 @@ async function generateFeed(siteConfig: SiteConfig) {
     language: 'zh-CN',
     image: `${SITE_URL}/img/logo.jpg`,
     favicon: `${SITE_URL}/img/logo.svg`,
-    copyright: `Copyright © ${new Date().getFullYear()} FishXCode`,
+    copyright: `Copyright © ${new Date().getFullYear()} aicentos`,
     updated: new Date(),
   })
 
@@ -195,13 +195,13 @@ export default withPwa(defineConfig({
   },
   head: [
     ['link', { rel: 'icon', href: p('/img/logo.svg') }],
-    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'FishXCode RSS', href: p('/feed.xml') }],
-    ['link', { rel: 'alternate', type: 'application/atom+xml', title: 'FishXCode Atom', href: p('/feed.atom') }],
+    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'aicentos RSS', href: p('/feed.xml') }],
+    ['link', { rel: 'alternate', type: 'application/atom+xml', title: 'aicentos Atom', href: p('/feed.atom') }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'FishXCode' }],
+    ['meta', { property: 'og:site_name', content: 'aicentos' }],
     ['meta', { property: 'og:image', content: `${SITE_URL}/img/logo.jpg` }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
-    ['meta', { name: 'twitter:site', content: '@fishxcode' }],
+    ['meta', { name: 'twitter:site', content: '@aicentos' }],
     ['meta', { name: 'twitter:image', content: `${SITE_URL}/img/logo.jpg` }],
   ],
   transformHead: (ctx) => {
@@ -265,7 +265,7 @@ export default withPwa(defineConfig({
     server: {
       proxy: {
         '/api/pricing': {
-          target: 'https://fishxcode.com',
+          target: 'https://www.aicentos.com/',
           changeOrigin: true
         }
       }
@@ -277,8 +277,8 @@ export default withPwa(defineConfig({
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
-      name: 'FishXCode - AI Coding 中转站',
-      short_name: 'FishXCode',
+      name: 'aicentos - AI Coding 中转站',
+      short_name: 'aicentos',
       description: SITE_DESC,
       theme_color: '#6366f1',
       icons: [
@@ -331,14 +331,14 @@ export default withPwa(defineConfig({
               {
                 text: '常用链接',
                 items: [
-                  { text: '控制台', link: 'https://fishxcode.com/console' },
-                  { text: '服务状态', link: 'https://status.fishxcode.com' },
-                  { text: '额度查询', link: 'https://api-key-tool.fishxcode.com' }
+                  { text: '控制台', link: 'https://www.aicentos.com/console' },
+                  { text: '服务状态', link: 'https://www.aicentos.com/' },
+                  { text: '额度查询', link: 'https://www.aicentos.com/' }
                 ]
               }
             ]
           },
-          { text: '立即注册', link: 'https://fishxcode.com/register?aff=9CTW' }
+          { text: '立即注册', link: 'https://www.aicentos.com/sign-up' }
         ],
         sidebar: [
           {
@@ -376,7 +376,7 @@ export default withPwa(defineConfig({
           }
         ],
         editLink: {
-          pattern: 'https://github.com/fishxcode/fishxcode/edit/main/:path',
+          pattern: 'https://github.com/aicentos/aicentos/edit/main/:path',
           text: '在 GitHub 上编辑此页'
         },
         lastUpdated: {
@@ -434,14 +434,14 @@ export default withPwa(defineConfig({
               {
                 text: 'Quick Links',
                 items: [
-                  { text: 'Console', link: 'https://fishxcode.com/console' },
-                  { text: 'Service Status', link: 'https://status.fishxcode.com' },
-                  { text: 'Credit Balance', link: 'https://api-key-tool.fishxcode.com' }
+                  { text: 'Console', link: 'https://www.aicentos.com/console' },
+                  { text: 'Service Status', link: 'https://www.aicentos.com/' },
+                  { text: 'Credit Balance', link: 'https://www.aicentos.com/' }
                 ]
               }
             ]
           },
-          { text: 'Register Now', link: 'https://fishxcode.com/register?aff=9CTW' }
+          { text: 'Register Now', link: 'https://www.aicentos.com/sign-up' }
         ],
         sidebar: [
           {
@@ -479,7 +479,7 @@ export default withPwa(defineConfig({
           }
         ],
         editLink: {
-          pattern: 'https://github.com/fishxcode/fishxcode/edit/main/:path',
+          pattern: 'https://github.com/aicentos/aicentos/edit/main/:path',
           text: 'Edit this page on GitHub'
         },
         lastUpdated: {
@@ -537,14 +537,14 @@ export default withPwa(defineConfig({
               {
                 text: 'Liens utiles',
                 items: [
-                  { text: 'Console', link: 'https://fishxcode.com/console' },
-                  { text: 'État du service', link: 'https://status.fishxcode.com' },
-                  { text: 'Vérifier le solde', link: 'https://api-key-tool.fishxcode.com' }
+                  { text: 'Console', link: 'https://www.aicentos.com/console' },
+                  { text: 'État du service', link: 'https://www.aicentos.com/' },
+                  { text: 'Vérifier le solde', link: 'https://www.aicentos.com/' }
                 ]
               }
             ]
           },
-          { text: "S'inscrire", link: 'https://fishxcode.com/register?aff=9CTW' }
+          { text: "S'inscrire", link: 'https://www.aicentos.com/sign-up' }
         ],
         sidebar: [
           {
@@ -582,7 +582,7 @@ export default withPwa(defineConfig({
           }
         ],
         editLink: {
-          pattern: 'https://github.com/fishxcode/fishxcode/edit/main/:path',
+          pattern: 'https://github.com/aicentos/aicentos/edit/main/:path',
           text: 'Modifier cette page sur GitHub'
         },
         lastUpdated: {
@@ -640,14 +640,14 @@ export default withPwa(defineConfig({
               {
                 text: 'Enlaces útiles',
                 items: [
-                  { text: 'Consola', link: 'https://fishxcode.com/console' },
-                  { text: 'Estado del servicio', link: 'https://status.fishxcode.com' },
-                  { text: 'Consultar saldo', link: 'https://api-key-tool.fishxcode.com' }
+                  { text: 'Consola', link: 'https://www.aicentos.com/console' },
+                  { text: 'Estado del servicio', link: 'https://www.aicentos.com/' },
+                  { text: 'Consultar saldo', link: 'https://www.aicentos.com/' }
                 ]
               }
             ]
           },
-          { text: 'Registrarse', link: 'https://fishxcode.com/register?aff=9CTW' }
+          { text: 'Registrarse', link: 'https://www.aicentos.com/sign-up' }
         ],
         sidebar: [
           {
@@ -685,7 +685,7 @@ export default withPwa(defineConfig({
           }
         ],
         editLink: {
-          pattern: 'https://github.com/fishxcode/fishxcode/edit/main/:path',
+          pattern: 'https://github.com/aicentos/aicentos/edit/main/:path',
           text: 'Editar esta página en GitHub'
         },
         lastUpdated: {
@@ -743,14 +743,14 @@ export default withPwa(defineConfig({
               {
                 text: 'Links úteis',
                 items: [
-                  { text: 'Console', link: 'https://fishxcode.com/console' },
-                  { text: 'Status do serviço', link: 'https://status.fishxcode.com' },
-                  { text: 'Verificar saldo', link: 'https://api-key-tool.fishxcode.com' }
+                  { text: 'Console', link: 'https://www.aicentos.com/console' },
+                  { text: 'Status do serviço', link: 'https://www.aicentos.com/' },
+                  { text: 'Verificar saldo', link: 'https://www.aicentos.com/' }
                 ]
               }
             ]
           },
-          { text: 'Registrar', link: 'https://fishxcode.com/register?aff=9CTW' }
+          { text: 'Registrar', link: 'https://www.aicentos.com/sign-up' }
         ],
         sidebar: [
           {
@@ -788,7 +788,7 @@ export default withPwa(defineConfig({
           }
         ],
         editLink: {
-          pattern: 'https://github.com/fishxcode/fishxcode/edit/main/:path',
+          pattern: 'https://github.com/aicentos/aicentos/edit/main/:path',
           text: 'Editar esta página no GitHub'
         },
         lastUpdated: {
@@ -855,12 +855,12 @@ export default withPwa(defineConfig({
       }
     },
     socialLinks: [
-      { icon: 'x', link: 'https://x.com/fishxcode' },
-      { icon: 'github', link: 'https://github.com/fishxcode' }
+      { icon: 'x', link: 'https://x.com/aicentos' },
+      { icon: 'github', link: 'https://github.com/aicentos' }
     ],
     footer: {
-      message: '<a href="https://fishxcode.com" target="_blank">主站</a> | <a href="https://doc.fishxcode.com/feed.xml" target="_blank">RSS</a> | <a href="https://doc.fishxcode.com/feed.atom" target="_blank">Atom</a> | <a href="https://doc.fishxcode.com/sitemap.xml" target="_blank">Sitemap</a> | <a href="https://github.com/fishxcode" target="_blank">GitHub</a>',
-      copyright: `Copyright © ${new Date().getFullYear()} FishXCode`
+      message: '<a href="https://www.aicentos.com/" target="_blank">主站</a> | <a href="https://www.aicentos.com/feed.xml" target="_blank">RSS</a> | <a href="https://www.aicentos.com/feed.atom" target="_blank">Atom</a> | <a href="https://www.aicentos.com/sitemap.xml" target="_blank">Sitemap</a> | <a href="https://github.com/aicentos" target="_blank">GitHub</a>',
+      copyright: `Copyright © ${new Date().getFullYear()} aicentos`
     }
   }
 }))

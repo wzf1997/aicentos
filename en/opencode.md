@@ -1,4 +1,4 @@
-# Using FishXCode with OpenCode
+# Using aicentos with OpenCode
 
 ## Install OpenCode
 
@@ -18,19 +18,19 @@ scoop install opencode
 
 :::
 
-## Configure FishXCode
+## Configure aicentos
 
-1. Get your API Key from [https://fishxcode.com/console/token](https://fishxcode.com/console/token)
+1. Get your API Key from [aicentos](https://www.aicentos.com/console/token)
 2. Set the environment variable:
 
 ::: code-group
 
 ```bash [Linux/macOS]
-export FISHXCODE_TOKEN=sk-xxx
+export AICENTOS_TOKEN=sk-xxx
 ```
 
 ```powershell [Windows PowerShell]
-$env:FISHXCODE_TOKEN="sk-xxx"
+$env:AICENTOS_TOKEN="sk-xxx"
 ```
 
 :::
@@ -41,12 +41,12 @@ $env:FISHXCODE_TOKEN="sk-xxx"
 {
   "$schema": "https://opencode.ai/config.json",
   "provider": {
-    "fishxcode-anthropic": {
+    "aicentos-anthropic": {
       "npm": "@ai-sdk/anthropic",
-      "name": "fishxcode-anthropic",
+      "name": "aicentos-anthropic",
       "options": {
-        "baseURL": "https://fishxcode.com/v1",
-        "apiKey": "{env:FISHXCODE_TOKEN}"
+        "baseURL": "https://www.aicentos.com/v1",
+        "apiKey": "{env:AICENTOS_TOKEN}"
       },
       "models": {
         "claude-sonnet-4-6": {
@@ -54,12 +54,12 @@ $env:FISHXCODE_TOKEN="sk-xxx"
         }
       }
     },
-    "fishxcode-openai": {
+    "aicentos-openai": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "fishxcode-openai",
+      "name": "aicentos-openai",
       "options": {
-        "baseURL": "https://fishxcode.com/v1",
-        "apiKey": "{env:FISHXCODE_TOKEN}"
+        "baseURL": "https://www.aicentos.com/v1",
+        "apiKey": "{env:AICENTOS_TOKEN}"
       },
       "models": {
         "gpt-5.2-codex": {
@@ -72,7 +72,7 @@ $env:FISHXCODE_TOKEN="sk-xxx"
 ```
 
 ::: warning Important
-Replace `sk-xxx` with your actual Token from the [FishXCode console](https://fishxcode.com/console/token).
+Replace `sk-xxx` with your actual Token from the [aicentos console](https://www.aicentos.com/console/token).
 :::
 
 ## Launch
@@ -82,4 +82,4 @@ cd my-project
 opencode
 ```
 
-Once launched, select a model under the FishXCode provider to start coding.
+Once launched, select a model under the aicentos provider to start coding.

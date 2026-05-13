@@ -9,11 +9,11 @@ const props = withDefaults(defineProps<{
 })
 
 const I18N: Record<string, { text: string; linkText: string }> = {
-  'zh-CN': { text: '欢迎使用 FishXCode — AI Coding 中转站', linkText: '立即注册' },
-  'en-US': { text: 'Welcome to FishXCode — AI Coding Relay', linkText: 'Register Now' },
-  'fr-FR': { text: 'Bienvenue sur FishXCode — Relais AI Coding', linkText: "S'inscrire" },
-  'es-ES': { text: 'Bienvenido a FishXCode — Relay AI Coding', linkText: 'Registrarse' },
-  'pt-BR': { text: 'Bem-vindo ao FishXCode — Relay AI Coding', linkText: 'Registrar' },
+  'zh-CN': { text: '欢迎使用 aicentos — AI Coding 中转站', linkText: '立即注册' },
+  'en-US': { text: 'Welcome to aicentos — AI Coding Relay', linkText: 'Register Now' },
+  'fr-FR': { text: 'Bienvenue sur aicentos — Relais AI Coding', linkText: "S'inscrire" },
+  'es-ES': { text: 'Bienvenido a aicentos — Relay AI Coding', linkText: 'Registrarse' },
+  'pt-BR': { text: 'Bem-vindo ao aicentos — Relay AI Coding', linkText: 'Registrar' },
 }
 
 const { lang } = useData()
@@ -65,7 +65,7 @@ function dismiss() {
     <div v-if="visible" class="announcement-bar">
       <div class="content">
         <span>{{ t.text }}</span>
-        <a href="https://fishxcode.com/register?aff=9CTW" class="link">{{ t.linkText }}</a>
+        <a href="https://www.aicentos.com/sign-up" class="link">{{ t.linkText }}</a>
       </div>
       <button class="close" aria-label="Close" @click="dismiss">&times;</button>
     </div>

@@ -1,4 +1,4 @@
-# Politique de remboursement FishXCode
+# Politique de remboursement aicentos
 
 **Date d'entrée en vigueur : 22 avril 2026**
 
@@ -71,8 +71,8 @@ Où :
 
 ## 7. Mise à jour de la politique
 
-FishXCode peut mettre à jour la présente politique en fonction des règles d'activité, des exigences des canaux de paiement ou de la législation applicable. La version mise à jour prend effet dès sa publication sur la plateforme ou à la date d'entrée en vigueur indiquée.
+aicentos peut mettre à jour la présente politique en fonction des règles d'activité, des exigences des canaux de paiement ou de la législation applicable. La version mise à jour prend effet dès sa publication sur la plateforme ou à la date d'entrée en vigueur indiquée.
 
 ## 8. Nous contacter
 
-Pour demander un remboursement, une conversion ou une compensation, veuillez écrire à **support@fishxcode.com** ou contacter l'assistant du groupe.
+Pour demander un remboursement, une conversion ou une compensation, veuillez écrire à **aicentos** ou contacter l'assistant du groupe.

@@ -4,12 +4,12 @@
 
 在开始前，你需要先准备好：
 
-1. 一个 FishXCode 账号
+1. 一个 aicentos 账号
 2. 一个可用的 API Token
 3. 确认当前 Token 可以访问 `gpt-image-2`
 
 获取 Token：
-- 控制台地址：[https://fishxcode.com/console/token](https://fishxcode.com/console/token)
+- 控制台地址：[aicentos](https://www.aicentos.com/console/token)
 
 ::: tip 提示
 如果你在控制台里看得到模型分组或权限配置，请确保当前 Token 覆盖了 `gpt-image-2`。如果不确定，先新建一个默认可用的 Token 进行测试。
@@ -17,10 +17,10 @@
 
 ## 开源可视化工具
 
-如果你不想先写代码，可以直接使用 FishXCode 提供的开源 GPT-Image-2 工具进行测试和出图：
+如果你不想先写代码，可以直接使用 aicentos 提供的开源 GPT-Image-2 工具进行测试和出图：
 
-- 在线体验：[https://fishxcode-gpt-image-2.lovable.app/](https://fishxcode-gpt-image-2.lovable.app/)
-- 开源仓库：[https://github.com/fishxcode/gpt-image-2](https://github.com/fishxcode/gpt-image-2)
+- 在线体验：[aicentos](https://www.aicentos.com/)
+- 开源仓库：[aicentos](https://www.aicentos.com/)
 
 ::: tip 使用建议
 先在工具中验证 Token、提示词和图片参数是否可用，再把同样的参数迁移到自己的代码或工作流中。
@@ -30,7 +30,7 @@
 
 这是最直接的方式，对应 OpenAI 兼容的图片生成接口。
 
-- 请求地址：`https://fishxcode.com/v1/images/generations`
+- 请求地址：`https://www.aicentos.com/v1/images/generations`
 - 模型名称：`gpt-image-2`
 
 ### Python 示例
@@ -40,8 +40,8 @@ import base64
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-你的FishXCode-Token",
-    base_url="https://fishxcode.com/v1"
+    api_key="sk-你的Aicentos-Token",
+    base_url="https://www.aicentos.com/v1"
 )
 
 result = client.images.generate(
@@ -63,8 +63,8 @@ import fs from "node:fs";
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  apiKey: "sk-你的FishXCode-Token",
-  baseURL: "https://fishxcode.com/v1",
+  apiKey: "sk-你的Aicentos-Token",
+  baseURL: "https://www.aicentos.com/v1",
 });
 
 const result = await client.images.generate({
@@ -81,8 +81,8 @@ fs.writeFileSync("gpt-image-2-output.png", Buffer.from(imageBase64, "base64"));
 
 ```bash
 curl --request POST \
-  --url https://fishxcode.com/v1/images/generations \
-  --header "Authorization: Bearer sk-你的FishXCode-Token" \
+  --url https://www.aicentos.com/v1/images/generations \
+  --header "Authorization: Bearer sk-你的Aicentos-Token" \
   --header "Content-Type: application/json" \
   --data '{
     "model": "gpt-image-2",
@@ -99,7 +99,7 @@ Images API 返回的核心结果通常是 `b64_json`，需要你在本地把 Bas
 
 如果你的工作流已经基于 `/v1/chat/completions`，也可以直接在对话接口里调用 `gpt-image-2`。
 
-- 请求地址：`https://fishxcode.com/v1/chat/completions`
+- 请求地址：`https://www.aicentos.com/v1/chat/completions`
 - 模型名称：`gpt-image-2`
 
 ### Python 示例
@@ -108,8 +108,8 @@ Images API 返回的核心结果通常是 `b64_json`，需要你在本地把 Bas
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-你的FishXCode-Token",
-    base_url="https://fishxcode.com/v1"
+    api_key="sk-你的Aicentos-Token",
+    base_url="https://www.aicentos.com/v1"
 )
 
 response = client.chat.completions.create(
@@ -129,8 +129,8 @@ print(response)
 
 ```bash
 curl --request POST \
-  --url https://fishxcode.com/v1/chat/completions \
-  --header "Authorization: Bearer sk-你的FishXCode-Token" \
+  --url https://www.aicentos.com/v1/chat/completions \
+  --header "Authorization: Bearer sk-你的Aicentos-Token" \
   --header "Content-Type: application/json" \
   --data '{
     "model": "gpt-image-2",
@@ -172,8 +172,8 @@ curl --request POST \
 
 在 Cherry Studio 中添加自定义提供商：
 
-- API Key：你的 FishXCode Token
-- Base URL：`https://fishxcode.com/v1`
+- API Key：你的 aicentos Token
+- Base URL：`https://www.aicentos.com/v1`
 
 ### 2. 添加模型
 
@@ -191,7 +191,7 @@ gpt-image-2
 
 ::: tip 提示
 如果 Cherry Studio 中看不到图片结果，先检查两件事：
-- Base URL 是否写成了 `https://fishxcode.com/v1`
+- Base URL 是否写成了 `https://www.aicentos.com/v1`
 - 当前版本的 Cherry Studio 是否对 OpenAI 图片接口做了完整适配
 :::
 
@@ -211,9 +211,9 @@ gpt-image-2
 按下面顺序排查：
 
 1. 确认模型名写的是 `gpt-image-2`
-2. 确认 Token 来自 [FishXCode 控制台](https://fishxcode.com/console/token)
+2. 确认 Token 来自 [aicentos 控制台](https://www.aicentos.com/console/token)
 3. 确认当前 Token 具备 `gpt-image-2` 的访问权限
-4. 确认 Base URL 写的是 `https://fishxcode.com/v1`
+4. 确认 Base URL 写的是 `https://www.aicentos.com/v1`
 
 ### 为什么参数传多了会报错？
 

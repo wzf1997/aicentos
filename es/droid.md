@@ -1,4 +1,4 @@
-# Usar FishXCode con Droid CLI
+# Usar aicentos con Droid CLI
 
 ## Instalación
 
@@ -22,10 +22,10 @@ Edita `~/.factory/config.json`:
 {
   "custom_models": [
     {
-      "model_display_name": "fishxcode-gpt5",
+      "model_display_name": "aicentos-gpt5",
       "model": "gpt-5",
-      "base_url": "https://fishxcode.com/v1",
-      "api_key": "TU_CLAVE_FISHXCODE",
+      "base_url": "https://www.aicentos.com/v1",
+      "api_key": "TU_CLAVE_AICENTOS",
       "provider": "generic-chat-completion-api",
       "max_tokens": 1280000
     }
@@ -34,9 +34,9 @@ Edita `~/.factory/config.json`:
 ```
 
 ::: warning Importante
-Reemplaza `TU_CLAVE_FISHXCODE` con tu API Key.
+Reemplaza `TU_CLAVE_AICENTOS` con tu API Key.
 :::
 
 ## Lanzamiento Directo
 
-Escribe `droid`, ingresa `/model`, y selecciona `fishxcode-gpt5` en Custom Model.
+Escribe `droid`, ingresa `/model`, y selecciona `aicentos-gpt5` en Custom Model.

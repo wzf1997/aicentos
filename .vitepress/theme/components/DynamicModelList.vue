@@ -24,7 +24,7 @@ interface ApiResponse {
 
 type VendorKey = 'all' | 'claude' | 'codex'
 
-const PRICING_PAGE_URL = 'https://fishxcode.com/pricing'
+const PRICING_PAGE_URL = 'https://www.aicentos.com/pricing'
 
 const { lang, site } = useData()
 const models = ref<ApiModel[]>([])
@@ -54,7 +54,7 @@ const I18N = {
     error: '加载失败',
     retry: '重试',
     modelCatalog: '模型目录',
-    heroTitle: '像模型广场一样浏览 FishXCode 支持模型',
+    heroTitle: '像模型广场一样浏览 https://www.aicentos.com/ 支持模型',
     helper: '按供应商、标签快速筛选，点击模型卡片即可复制模型 ID。需要查看完整计费信息时，直接进入定价页面。',
     pricingPage: '查看定价页面',
     pricingHint: '打开完整模型广场',
@@ -104,7 +104,7 @@ const I18N = {
     error: 'Failed to load',
     retry: 'Retry',
     modelCatalog: 'Model Catalog',
-    heroTitle: 'Browse FishXCode models like the pricing plaza',
+    heroTitle: 'Browse https://www.aicentos.com/ models like the pricing plaza',
     helper: 'Filter by provider or tags and copy model IDs directly from each card. Open the pricing page when you need the full billing view.',
     pricingPage: 'Open Pricing Page',
     pricingHint: 'Go to the full model plaza',
@@ -154,7 +154,7 @@ const I18N = {
     error: 'Échec du chargement',
     retry: 'Réessayer',
     modelCatalog: 'Catalogue des modèles',
-    heroTitle: 'Parcourez les modèles FishXCode comme dans la place tarifaire',
+    heroTitle: 'Parcourez les modèles https://www.aicentos.com/ comme dans la place tarifaire',
     helper: 'Filtrez par fournisseur ou étiquette et copiez l"ID du modèle depuis chaque carte. Ouvrez la page tarifaire pour la vue complète de facturation.',
     pricingPage: 'Ouvrir la page tarifaire',
     pricingHint: 'Accéder à la place complète',
@@ -204,7 +204,7 @@ const I18N = {
     error: 'Error al cargar',
     retry: 'Reintentar',
     modelCatalog: 'Catálogo de modelos',
-    heroTitle: 'Explora los modelos de FishXCode como en la plaza de precios',
+    heroTitle: 'Explora los modelos de https://www.aicentos.com/ como en la plaza de precios',
     helper: 'Filtra por proveedor o etiquetas y copia el ID del modelo desde cada tarjeta. Abre la página de precios para ver la facturación completa.',
     pricingPage: 'Abrir página de precios',
     pricingHint: 'Ir a la plaza completa',
@@ -254,7 +254,7 @@ const I18N = {
     error: 'Falha ao carregar',
     retry: 'Tentar novamente',
     modelCatalog: 'Catálogo de modelos',
-    heroTitle: 'Navegue pelos modelos FishXCode como na praça de preços',
+    heroTitle: 'Navegue pelos modelos https://www.aicentos.com/ como na praça de preços',
     helper: 'Filtre por provedor ou tags e copie o ID do modelo direto do card. Abra a página de preços para ver a cobrança completa.',
     pricingPage: 'Abrir página de preços',
     pricingHint: 'Ir para a praça completa',

@@ -1,19 +1,19 @@
 ---
 layout: home
-title: FishXCode - AI Coding 中转站
+title: aicentos - AI Coding 中转站
 description: AI Coding 中转站 - 支持 Claude、Codex 模型在多种平台使用
 
 hero:
-  name: "FishXCode"
+  name: "aicentos"
   text: "AI Coding 中转站"
   tagline: 支持 Claude、Codex 模型在多种平台使用
   image:
     src: /img/logo.svg
-    alt: FishXCode Logo
+    alt: aicentos Logo
   actions:
     - theme: brand
       text: 立即注册
-      link: https://fishxcode.com/register?aff=9CTW
+      link: https://www.aicentos.com/sign-up
     - theme: alt
       text: 使用文档
       link: /start

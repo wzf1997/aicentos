@@ -1,6 +1,6 @@
 ---
 title: Etat de sante des groupes
-description: Etat de sante des groupes FishXCode, details des tokens d'equipe, colonnes d'export et procedure de diagnostic.
+description: Etat de sante des groupes aicentos, details des tokens d'equipe, colonnes d'export et procedure de diagnostic.
 ---
 
 # Etat de sante des groupes
@@ -14,22 +14,22 @@ L'etat de sante des groupes sert a distinguer une erreur isolee d'un probleme co
 Quand une API echoue, consultez d'abord l'etat de sante des groupes, puis ouvrez le journal d'utilisation de la requete pour retrouver le `request_id`.
 
 ::: info Perimetre des donnees
-La page publique `status` integree ici interroge l'etat de sante des groupes utilises par tous les utilisateurs FishXCode sur la periode selectionnee. Elle reflete la disponibilite globale des groupes de la plateforme, avec un suivi en temps reel, impartial et stable.
+La page publique `status` integree ici interroge l'etat de sante des groupes utilises par tous les utilisateurs aicentos sur la periode selectionnee. Elle reflete la disponibilite globale des groupes de la plateforme, avec un suivi en temps reel, impartial et stable.
 
 La vue **Journaux d'utilisation -> Etat de sante des groupes** dans la console affiche les donnees visibles selon les droits du compte courant. Un utilisateur personnel voit generalement ses propres tokens ; les administrateurs entreprise et equipe peuvent analyser l'utilisation par utilisateur, nom d'utilisateur, token et groupe.
 :::
 
 <iframe
-  src="https://status.fishxcode.com/group/global?view=list&sort=group&window=24h"
-  title="Etat de sante des groupes FishXCode"
+  src="https://www.aicentos.com/group/global?view=list&sort=group&window=24h"
+  title="Etat de sante des groupes aicentos"
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"
   style="width: 100%; height: 720px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-soft);"
 ></iframe>
 
-Si la page d'etat ci-dessus ne se charge pas correctement, ouvrez directement [l'etat de sante des groupes FishXCode](https://status.fishxcode.com/group/global?view=list&sort=group&window=24h).
+Si la page d'etat ci-dessus ne se charge pas correctement, ouvrez directement [l'etat de sante des groupes aicentos](https://www.aicentos.com/group/global?view=list&sort=group&window=24h).
 
-Entree console : [Console -> Journaux d'utilisation](https://fishxcode.com/console/log). Dans les journaux d'erreur ou les vues statistiques, filtrez par periode, modele, token, groupe, message d'erreur et code de statut.
+Entree console : [Console -> Journaux d'utilisation](https://www.aicentos.com/console/log). Dans les journaux d'erreur ou les vues statistiques, filtrez par periode, modele, token, groupe, message d'erreur et code de statut.
 
 ## Exemple console
 

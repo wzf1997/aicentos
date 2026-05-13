@@ -1,4 +1,4 @@
-# Utiliser FishXCode avec OpenCode
+# Utiliser aicentos avec OpenCode
 
 ## Installer OpenCode
 
@@ -18,19 +18,19 @@ scoop install opencode
 
 :::
 
-## Configurer FishXCode
+## Configurer aicentos
 
-1. Obtenez votre cle API sur [https://fishxcode.com/console/token](https://fishxcode.com/console/token)
+1. Obtenez votre cle API sur [aicentos](https://www.aicentos.com/console/token)
 2. Definissez la variable d'environnement :
 
 ::: code-group
 
 ```bash [Linux/macOS]
-export FISHXCODE_TOKEN=sk-xxx
+export AICENTOS_TOKEN=sk-xxx
 ```
 
 ```powershell [Windows PowerShell]
-$env:FISHXCODE_TOKEN="sk-xxx"
+$env:AICENTOS_TOKEN="sk-xxx"
 ```
 
 :::
@@ -41,12 +41,12 @@ $env:FISHXCODE_TOKEN="sk-xxx"
 {
   "$schema": "https://opencode.ai/config.json",
   "provider": {
-    "fishxcode-anthropic": {
+    "aicentos-anthropic": {
       "npm": "@ai-sdk/anthropic",
-      "name": "fishxcode-anthropic",
+      "name": "aicentos-anthropic",
       "options": {
-        "baseURL": "https://fishxcode.com/v1",
-        "apiKey": "{env:FISHXCODE_TOKEN}"
+        "baseURL": "https://www.aicentos.com/v1",
+        "apiKey": "{env:AICENTOS_TOKEN}"
       },
       "models": {
         "claude-sonnet-4-6": {
@@ -54,12 +54,12 @@ $env:FISHXCODE_TOKEN="sk-xxx"
         }
       }
     },
-    "fishxcode-openai": {
+    "aicentos-openai": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "fishxcode-openai",
+      "name": "aicentos-openai",
       "options": {
-        "baseURL": "https://fishxcode.com/v1",
-        "apiKey": "{env:FISHXCODE_TOKEN}"
+        "baseURL": "https://www.aicentos.com/v1",
+        "apiKey": "{env:AICENTOS_TOKEN}"
       },
       "models": {
         "gpt-5.2-codex": {
@@ -72,7 +72,7 @@ $env:FISHXCODE_TOKEN="sk-xxx"
 ```
 
 ::: warning Important
-Remplacez `sk-xxx` par votre token reel obtenu depuis la [console FishXCode](https://fishxcode.com/console/token).
+Remplacez `sk-xxx` par votre token reel obtenu depuis la [console aicentos](https://www.aicentos.com/console/token).
 :::
 
 ## Demarrage
@@ -82,4 +82,4 @@ cd my-project
 opencode
 ```
 
-Une fois lance, selectionnez un modele sous le fournisseur FishXCode pour commencer.
+Une fois lance, selectionnez un modele sous le fournisseur aicentos pour commencer.

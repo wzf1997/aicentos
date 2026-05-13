@@ -1,13 +1,13 @@
 ---
 title: Guia de registros de error
-description: Campos, codigos de estado, errores comunes y flujo de diagnostico de los registros de error en la consola de FishXCode.
+description: Campos, codigos de estado, errores comunes y flujo de diagnostico de los registros de error en la consola de aicentos.
 ---
 
 # Guia de registros de error
 
 Los registros de error ayudan a encontrar la causa concreta de una solicitud fallida. Para diagnosticar un problema, revisa primero el [estado de salud de los grupos](/es/group-health) para entender el alcance y luego usa el `request_id` del registro para localizar la solicitud exacta.
 
-Entrada: [Consola -> Registros de uso](https://fishxcode.com/console/log). Cambia el tipo de registro a **Registros de error** y filtra por periodo, modelo, Token, grupo, request ID, mensaje de error y codigo de estado.
+Entrada: [Consola -> Registros de uso](https://www.aicentos.com/console/log). Cambia el tipo de registro a **Registros de error** y filtra por periodo, modelo, Token, grupo, request ID, mensaje de error y codigo de estado.
 
 ::: tip Lectura rapida
 - `request_id` localiza una solicitud concreta

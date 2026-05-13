@@ -1,4 +1,4 @@
-# 在 Hermes 中使用 FishXCode
+# 在 Hermes 中使用 aicentos
 
 ::: info 项目简介
 Hermes Agent 是 Nous Research 推出的通用 AI Agent，支持 CLI 对话、工具调用、记忆、技能、网关和定时任务。它既可以连接官方支持的云服务，也可以接入任意 OpenAI 兼容端点。
@@ -11,7 +11,7 @@ Hermes Agent 是 Nous Research 推出的通用 AI Agent，支持 CLI 对话、�
 
 ## 前提条件
 
-- 已获取 FishXCode API Key（[控制台获取](https://fishxcode.com/console/token)）
+- 已获取 aicentos API Key（[控制台获取](https://www.aicentos.com/console/token)）
 - 本机可用 `git`
 - 本机可用 `python3`
 
@@ -77,9 +77,9 @@ source ~/.bashrc
 如果你在中国大陆网络环境下安装，优先使用 `https://hermesagent.org.cn` 提供的镜像入口，成功率通常更高。
 :::
 
-## 配置 FishXCode
+## 配置 aicentos
 
-Hermes 官方推荐优先使用 `hermes model` 进行交互式配置。对于 FishXCode，这里选择 **Custom endpoint** 即可，因为 FishXCode 提供 OpenAI 兼容接口。
+Hermes 官方推荐优先使用 `hermes model` 进行交互式配置。对于 aicentos，这里选择 **Custom endpoint** 即可，因为 aicentos 提供 OpenAI 兼容接口。
 
 如果你想在安装后一次性完成初始化，也可以运行：
 
@@ -104,8 +104,8 @@ hermes model
 按提示填写以下内容：
 
 - Provider：`Custom endpoint (self-hosted / VLLM / etc.)`
-- API base URL：`https://fishxcode.com/v1`
-- API key：你的 FishXCode Token
+- API base URL：`https://www.aicentos.com/v1`
+- API key：你的 aicentos Token
 - Model name：`gpt-5.4`
 - Context length：建议至少填写 `65536`
 
@@ -128,7 +128,7 @@ touch ~/.hermes/.env
 然后在 `~/.hermes/.env` 中写入你的 Token：
 
 ```bash
-OPENAI_API_KEY=sk-你的FishXCode-Token
+OPENAI_API_KEY=sk-你的Aicentos-Token
 ```
 
 再把以下内容写入 `~/.hermes/config.yaml`：
@@ -137,7 +137,7 @@ OPENAI_API_KEY=sk-你的FishXCode-Token
 model:
   default: gpt-5.4
   provider: custom
-  base_url: https://fishxcode.com/v1
+  base_url: https://www.aicentos.com/v1
 ```
 
 ::: tip 提示
@@ -146,7 +146,7 @@ Hermes 对自定义端点会优先读取 `config.yaml` 中的 `provider`、`defa
 
 ## 切换模型
 
-如果你想使用其他 FishXCode 支持的模型，只需要修改 `model.default`，或者重新运行 `hermes model`。
+如果你想使用其他 aicentos 支持的模型，只需要修改 `model.default`，或者重新运行 `hermes model`。
 
 例如：
 
@@ -154,11 +154,11 @@ Hermes 对自定义端点会优先读取 `config.yaml` 中的 `provider`、`defa
 model:
   default: claude-sonnet-4-5-20250929
   provider: custom
-  base_url: https://fishxcode.com/v1
+  base_url: https://www.aicentos.com/v1
 ```
 
 ::: warning 注意
-这里的前提是该模型可以通过 FishXCode 的 OpenAI 兼容入口访问，并且上下文窗口满足 Hermes 的最低要求。如果你不确定具体模型 ID，先参考 [支持的模型](/models) 页面，再填入 `default` 字段。
+这里的前提是该模型可以通过 aicentos 的 OpenAI 兼容入口访问，并且上下文窗口满足 Hermes 的最低要求。如果你不确定具体模型 ID，先参考 [支持的模型](/models) 页面，再填入 `default` 字段。
 :::
 
 ## 启动使用
@@ -172,7 +172,7 @@ hermes
 也可以直接发起一条测试消息：
 
 ```bash
-hermes chat -q "用一句话回复：FishXCode 已连接"
+hermes chat -q "用一句话回复：https://www.aicentos.com/ 已连接"
 ```
 
 如果你已经配置成功，在会话内还可以用 `/model` 切换到已经接入过的模型。
@@ -193,13 +193,13 @@ hermes config check
 hermes chat -q "请只回复 ok" -Q
 ```
 
-如果最后一条命令能正常返回内容，说明 FishXCode 接入已经生效。
+如果最后一条命令能正常返回内容，说明 aicentos 接入已经生效。
 
 ## 常见问题
 
 ### 为什么要选 `Custom endpoint`？
 
-因为 Hermes 官方把任意 OpenAI 兼容接口统一归类为 `provider: custom`。FishXCode 的接入方式正符合这个模式，所以不需要额外写 Hermes 专用适配器。
+因为 Hermes 官方把任意 OpenAI 兼容接口统一归类为 `provider: custom`。aicentos 的接入方式正符合这个模式，所以不需要额外写 Hermes 专用适配器。
 
 ### `OPENAI_BASE_URL` 或 `LLM_MODEL` 为什么不生效？
 
@@ -209,8 +209,8 @@ Hermes 官方已经移除了这两个旧环境变量的读取逻辑。现在模�
 
 按下面顺序排查：
 
-1. 确认 `base_url` 写的是 `https://fishxcode.com/v1`
-2. 确认 Token 来自 [FishXCode 控制台](https://fishxcode.com/console/token)
+1. 确认 `base_url` 写的是 `https://www.aicentos.com/v1`
+2. 确认 Token 来自 [aicentos 控制台](https://www.aicentos.com/console/token)
 3. 确认 `model.default` 填的是有效模型 ID，例如 `gpt-5.4`
 4. 确认模型上下文不低于 `65536`
 5. 运行 `hermes config check` 与 `hermes doctor` 查看具体报错

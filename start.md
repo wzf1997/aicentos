@@ -1,15 +1,11 @@
 ---
-title: 在 Claude Code 中使用 FishXCode
-description: 用 Claude Code 接入 FishXCode 的完整上手流程和关键配置步骤。
+title: 在 Claude Code 中使用 aicentos
+description: 用 Claude Code 接入 aicentos 的完整上手流程和关键配置步骤。
 ---
 
-# 在 Claude  Code 中使用 FishXCode
+# 在 Claude  Code 中使用 aicentos
 
 > 首次使用？请先完成 [账户注册与充值](/account)。
-
-## 视频教程
-
-<VideoPlayer src="https://www.hi168.com/api/v2/s3/api/public/share/dl/fd3731b95585381211fd621eb1914b2f" />
 
 ## 一、环境准备
 
@@ -57,7 +53,7 @@ npx zcf
 :::
 
 ---
-## 三、配置 FishXCode
+## 三、配置 aicentos
 
 1. 终端输入 `npx zcf`，回车运行。
    出现 `Ok to proceed? (y)` 时输入 `y` 回车。
@@ -91,11 +87,11 @@ npx zcf
 
 11. API 基础 URL：
     ```
-    https://fishxcode.com
+    https://www.aicentos.com/
     ```
 
 12. API 密钥：
-    填写 FishXCode 控制台生成的令牌
+    填写 aicentos 控制台生成的令牌
 
 13. 模型相关配置：
     默认回车跳过即可
@@ -199,7 +195,7 @@ npm install -g @anthropic-ai/claude-code
 
 ![Claude  Code 插件接入方式](/img/start/vscode-02-login.png)
 
-推荐通过 `settings.json` 配置接入 FishXCode。点击插件右下角**齿轮图标** → **在 settings.json 中编辑**：
+推荐通过 `settings.json` 配置接入 aicentos。点击插件右下角**齿轮图标** → **在 settings.json 中编辑**：
 
 ![打开 settings.json 编辑](/img/start/vscode-03-settings.png)
 
@@ -210,14 +206,14 @@ npm install -g @anthropic-ai/claude-code
   "claudeCode.preferredLocation": "panel",
   "claudeCode.environmentVariables": [
     { "name": "ANTHROPIC_AUTH_TOKEN", "value": "替换为您的 API Key" },
-    { "name": "ANTHROPIC_BASE_URL", "value": "https://fishxcode.com/" }
+    { "name": "ANTHROPIC_BASE_URL", "value": "https://www.aicentos.com/" }
   ]
 }
 ```
 
 ![settings.json 配置示例](/img/start/vscode-04-config.png)
 
-保存后**退出并重新打开 VSCode**，插件即可正常连接 FishXCode。
+保存后**退出并重新打开 VSCode**，插件即可正常连接 aicentos。
 
 ![在 VSCode 中使用 Claude  Code](/img/start/vscode-05-demo.gif)
 
@@ -235,7 +231,7 @@ Token 余额不足，前往控制台充值后重试。
 
 ```powershell
 setx ANTHROPIC_AUTH_TOKEN "sk-xxx"
-setx ANTHROPIC_BASE_URL "https://fishxcode.com/"
+setx ANTHROPIC_BASE_URL "https://www.aicentos.com/"
 ```
 
 ### 提示"Unable to connect to Anthropic services"

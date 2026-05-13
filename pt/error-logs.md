@@ -1,13 +1,13 @@
 ---
 title: Explicacao dos logs de erro
-description: Campos dos logs de erro no console FishXCode, significado dos codigos de status, erros comuns e fluxo de diagnostico.
+description: Campos dos logs de erro no console aicentos, significado dos codigos de status, erros comuns e fluxo de diagnostico.
 ---
 
 # Explicacao dos logs de erro
 
 Os logs de erro ajudam a localizar a causa exata de uma requisicao que falhou. Ao investigar, veja primeiro o [status de saude dos grupos](/pt/group-health) para entender o alcance do problema, depois use o `request_id` no log de erro para localizar a requisicao especifica.
 
-Entrada: [Console -> Logs de uso](https://fishxcode.com/console/log). Depois de selecionar **Logs de erro**, voce pode filtrar por periodo, modelo, Token, grupo, request ID, mensagem de erro e codigo de status.
+Entrada: [Console -> Logs de uso](https://www.aicentos.com/console/log). Depois de selecionar **Logs de erro**, voce pode filtrar por periodo, modelo, Token, grupo, request ID, mensagem de erro e codigo de status.
 
 ::: tip Julgamento rapido
 - `request_id` localiza uma requisicao especifica

@@ -1,4 +1,4 @@
-# Utiliser FishXCode avec Hermes
+# Utiliser aicentos avec Hermes
 
 ::: info Présentation du projet
 Hermes Agent est un agent IA généraliste de Nous Research. Il prend en charge le chat en CLI, l'appel d'outils, la mémoire, les skills, les passerelles et les tâches planifiées. Il peut se connecter aux services cloud officiellement pris en charge ou à n'importe quel endpoint compatible OpenAI.
@@ -11,7 +11,7 @@ Hermes Agent est un agent IA généraliste de Nous Research. Il prend en charge 
 
 ## Prérequis
 
-- Clé API FishXCode ([Obtenir depuis la console](https://fishxcode.com/console/token))
+- Clé API aicentos ([Obtenir depuis la console](https://www.aicentos.com/console/token))
 - `git` disponible sur votre machine
 - `python3` disponible sur votre machine
 
@@ -69,9 +69,9 @@ source ~/.bashrc
 
 Si vous utilisez Windows PowerShell, fermez simplement le terminal puis rouvrez-le.
 
-## Configurer FishXCode
+## Configurer aicentos
 
-Hermes recommande officiellement d'utiliser `hermes model` pour la configuration interactive. Avec FishXCode, choisissez **Custom endpoint**, car FishXCode fournit une API compatible OpenAI.
+Hermes recommande officiellement d'utiliser `hermes model` pour la configuration interactive. Avec aicentos, choisissez **Custom endpoint**, car aicentos fournit une API compatible OpenAI.
 
 Si vous souhaitez effectuer toute la configuration post-installation en une seule fois, vous pouvez aussi lancer :
 
@@ -96,8 +96,8 @@ hermes model
 Renseignez les champs comme suit :
 
 - Provider : `Custom endpoint (self-hosted / VLLM / etc.)`
-- API base URL : `https://fishxcode.com/v1`
-- API key : votre token FishXCode
+- API base URL : `https://www.aicentos.com/v1`
+- API key : votre token aicentos
 - Model name : `gpt-5.4`
 - Context length : utilisez au minimum `65536`
 
@@ -120,7 +120,7 @@ touch ~/.hermes/.env
 Ensuite, placez votre token dans `~/.hermes/.env` :
 
 ```bash
-OPENAI_API_KEY=sk-your-fishxcode-token
+OPENAI_API_KEY=sk-your-aicentos-token
 ```
 
 Puis écrivez ceci dans `~/.hermes/config.yaml` :
@@ -129,7 +129,7 @@ Puis écrivez ceci dans `~/.hermes/config.yaml` :
 model:
   default: gpt-5.4
   provider: custom
-  base_url: https://fishxcode.com/v1
+  base_url: https://www.aicentos.com/v1
 ```
 
 ::: tip Conseil
@@ -138,7 +138,7 @@ Pour les endpoints personnalisés, Hermes lit `provider`, `default` et `base_url
 
 ## Changer de modèle
 
-Pour utiliser un autre modèle pris en charge par FishXCode, modifiez simplement `model.default` ou relancez `hermes model`.
+Pour utiliser un autre modèle pris en charge par aicentos, modifiez simplement `model.default` ou relancez `hermes model`.
 
 Par exemple :
 
@@ -146,11 +146,11 @@ Par exemple :
 model:
   default: claude-sonnet-4-5-20250929
   provider: custom
-  base_url: https://fishxcode.com/v1
+  base_url: https://www.aicentos.com/v1
 ```
 
 ::: warning Remarque
-Cela suppose que le modèle est disponible via l'endpoint compatible OpenAI de FishXCode et qu'il respecte l'exigence minimale de contexte de Hermes. Si vous n'êtes pas sûr de l'identifiant exact du modèle, consultez d'abord la page [Modèles pris en charge](/fr/models), puis renseignez le champ `default`.
+Cela suppose que le modèle est disponible via l'endpoint compatible OpenAI de aicentos et qu'il respecte l'exigence minimale de contexte de Hermes. Si vous n'êtes pas sûr de l'identifiant exact du modèle, consultez d'abord la page [Modèles pris en charge](/fr/models), puis renseignez le champ `default`.
 :::
 
 ## Démarrer Hermes
@@ -164,7 +164,7 @@ hermes
 Ou envoyez un message de test rapide :
 
 ```bash
-hermes chat -q "Réponds en une phrase : FishXCode est connecté"
+hermes chat -q "Réponds en une phrase : https://www.aicentos.com/ est connecté"
 ```
 
 Si la configuration fonctionne déjà, vous pouvez aussi changer de modèle dans la session avec `/model`.
@@ -185,13 +185,13 @@ hermes config check
 hermes chat -q "Réponds uniquement par ok" -Q
 ```
 
-Si la dernière commande renvoie une réponse normale, l'intégration FishXCode fonctionne.
+Si la dernière commande renvoie une réponse normale, l'intégration aicentos fonctionne.
 
 ## FAQ
 
 ### Pourquoi choisir `Custom endpoint` ?
 
-Parce que Hermes traite toute API compatible OpenAI comme `provider: custom`. FishXCode correspond à ce modèle, donc aucun adaptateur spécifique à Hermes n'est nécessaire.
+Parce que Hermes traite toute API compatible OpenAI comme `provider: custom`. aicentos correspond à ce modèle, donc aucun adaptateur spécifique à Hermes n'est nécessaire.
 
 ### Pourquoi `OPENAI_BASE_URL` ou `LLM_MODEL` ne fonctionnent-ils pas ?
 
@@ -201,8 +201,8 @@ Hermes a supprimé la prise en charge de ces anciennes variables d'environnement
 
 Vérifiez dans cet ordre :
 
-1. Assurez-vous que `base_url` est `https://fishxcode.com/v1`
-2. Assurez-vous que le token provient bien de la [console FishXCode](https://fishxcode.com/console/token)
+1. Assurez-vous que `base_url` est `https://www.aicentos.com/v1`
+2. Assurez-vous que le token provient bien de la [console aicentos](https://www.aicentos.com/console/token)
 3. Assurez-vous que `model.default` est un identifiant de modèle valide, par exemple `gpt-5.4`
 4. Assurez-vous que le contexte du modèle est au moins de `65536`
 5. Exécutez `hermes config check` et `hermes doctor` pour voir l'erreur exacte

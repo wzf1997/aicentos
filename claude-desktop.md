@@ -1,4 +1,4 @@
-# 在 Claude Desktop 中使用 FishXCode
+# 在 Claude Desktop 中使用 aicentos
 
 ## 适用范围
 
@@ -8,7 +8,7 @@
 
 - 在桌面端使用 Claude 的 **Cowork**
 - 在桌面端使用 Claude 的 **Code**
-- 通过自定义 API / 网关把请求转到 FishXCode
+- 通过自定义 API / 网关把请求转到 aicentos
 
 那么走的就是这套配置方式。
 
@@ -21,11 +21,11 @@
 开始前请先准备：
 
 1. 安装最新版 Claude Desktop
-2. 准备一个 FishXCode Token
+2. 准备一个 aicentos Token
 3. 确认你的 Token 可访问 Claude 模型
 
 Token 获取地址：
-- [https://fishxcode.com/console/token](https://fishxcode.com/console/token)
+- [aicentos](https://www.aicentos.com/console/token)
 
 建议优先准备这些模型作为候选：
 
@@ -65,15 +65,15 @@ Developer → Configure third-party inference
 Gateway
 ```
 
-FishXCode 这类自定义 API / 中转服务，对应的就是 `gateway` 模式。
+aicentos 这类自定义 API / 中转服务，对应的就是 `gateway` 模式。
 
-### 4. 填写 FishXCode 配置
+### 4. 填写 aicentos 配置
 
 核心信息按下面填写：
 
-- Gateway URL：`https://fishxcode.com`
+- Gateway URL：`https://www.aicentos.com/`
 - Authentication：`x-api-key`
-- API Key：你的 FishXCode Token
+- API Key：你的 aicentos Token
 
 如果界面要求填写模型列表，建议先填：
 
@@ -125,16 +125,16 @@ Apply locally
 本地文件里实际使用的是 `enterpriseConfig` 这组第三方推理配置。更稳妥的做法不是手写 JSON，而是先在应用内完成配置，再把生成结果纳入备份或同步。
 :::
 
-## FishXCode 推荐配置
+## aicentos 推荐配置
 
 如果你要手动核对字段，重点关注下面几项：
 
 | 字段 | 建议值 |
 | --- | --- |
 | `inferenceProvider` | `gateway` |
-| `inferenceGatewayBaseUrl` | `https://fishxcode.com` |
+| `inferenceGatewayBaseUrl` | `https://www.aicentos.com/` |
 | `inferenceGatewayAuthScheme` | `x-api-key` |
-| `inferenceGatewayApiKey` | 你的 FishXCode Token |
+| `inferenceGatewayApiKey` | 你的 aicentos Token |
 | `inferenceModels` | Claude 模型列表 |
 | `isClaudeCodeForDesktopEnabled` | `true` |
 
@@ -193,16 +193,16 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 1. 确认已经启用 Developer mode
 2. 确认已执行 `Configure third-party inference`
 3. 确认选择的是 `Gateway`
-4. 确认 `gatewayUrl` 写的是 `https://fishxcode.com`
+4. 确认 `gatewayUrl` 写的是 `https://www.aicentos.com/`
 5. 确认 Token 有效且可访问 Claude 模型
 6. 完成后彻底退出 Claude Desktop 再重开
 
-### Gateway URL 为什么不是 `https://fishxcode.com/v1`？
+### Gateway URL 为什么不是 `https://www.aicentos.com/v1`？
 
 因为 Claude Desktop 的第三方推理网关模式走的是 Anthropic 风格网关配置，不是 OpenAI 兼容的 `/v1/chat/completions` 路径。这里应填写网关根地址：
 
 ```text
-https://fishxcode.com
+https://www.aicentos.com/
 ```
 
 ### 配好了，但请求报认证错误怎么办？
@@ -210,7 +210,7 @@ https://fishxcode.com
 优先检查：
 
 1. 认证方式是否选成了 `x-api-key`
-2. API Key 是否直接填入了 FishXCode Token
+2. API Key 是否直接填入了 aicentos Token
 3. Token 是否已失效、被删除或权限不足
 
 ### 能不能手动改本地 JSON？

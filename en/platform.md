@@ -1,18 +1,18 @@
 ---
 title: Platform Navigation & System Guide
-description: FishXCode platform architecture, console features, page routes, and documentation reference.
+description: aicentos platform architecture, console features, page routes, and documentation reference.
 ---
 
 # Platform Navigation & System Guide
 
-> This page provides an overview of the FishXCode platform structure to help you quickly locate features.
+> This page provides an overview of the aicentos platform structure to help you quickly locate features.
 > Need to create an account? See [Account Setup & Management](/en/account).
 
 ## 1. Platform Overview
 
-FishXCode is an AI access platform for developers and teams -- a unified gateway with website, pricing, and docs on the front end, and console, tokens, billing, invoices, and usage logs on the back end.
+aicentos is an AI access platform for developers and teams -- a unified gateway with website, pricing, and docs on the front end, and console, tokens, billing, invoices, and usage logs on the back end.
 
-The platform supports mainstream AI models. Specific channels and models are subject to change -- check the [Pricing page](https://fishxcode.com/pricing) for details. From registration to token creation, plan selection, tool integration, and usage tracking, everything is handled in one system.
+The platform supports mainstream AI models. Specific channels and models are subject to change -- check the [Pricing page](https://www.aicentos.com/pricing) for details. From registration to token creation, plan selection, tool integration, and usage tracking, everything is handled in one system.
 
 ---
 
@@ -73,7 +73,7 @@ After logging in, all operations are centralized in the console. Use the followi
 
 ## 4. Documentation Reference
 
-`/docs` is the FishXCode documentation center. The content maps directly to the pages on this documentation site:
+`/docs` is the aicentos documentation center. The content maps directly to the pages on this documentation site:
 
 | Doc Page | Route | Content |
 |---|---|---|

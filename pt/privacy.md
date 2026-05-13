@@ -1,4 +1,4 @@
-# Política de Privacidade da FishXCode
+# Política de Privacidade da aicentos
 
 **Data de vigência: 11 de fevereiro de 2026**
 
@@ -14,7 +14,7 @@ A presente política está em conformidade com a Lei de Proteção de Informaç�
 ## 2. Uso dos dados enviados
 
 ::: info
-A FishXCode **não utiliza** suas entradas nem as saídas geradas para treinar modelos de IA, salvo se você ativar explicitamente o modo de histórico ou depuração.
+A aicentos **não utiliza** suas entradas nem as saídas geradas para treinar modelos de IA, salvo se você ativar explicitamente o modo de histórico ou depuração.
 :::
 
 ## 3. Compartilhamento de dados
@@ -53,15 +53,15 @@ Nos termos da PIPL, você possui os seguintes direitos:
 
 ## 8. Menores de idade
 
-A FishXCode não coleta intencionalmente dados de menores de idade.
+A aicentos não coleta intencionalmente dados de menores de idade.
 
 ## 9. Contato
 
 ::: tip
 Para exercer seus direitos ou para qualquer dúvida relacionada à privacidade, entre em contato:
 
-- **E-mail dedicado**: [privacy@fishxcode.com](mailto:privacy@fishxcode.com)
-- **Suporte geral**: [support@fishxcode.com](mailto:support@fishxcode.com)
+- **E-mail dedicado**: [aicentos](https://www.aicentos.com/)
+- **Suporte geral**: [aicentos](https://www.aicentos.com/)
 
 Prazo de resposta: 15 dias úteis.
 :::

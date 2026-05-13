@@ -1,13 +1,13 @@
 ---
 title: Guide des journaux d'erreur
-description: Champs des journaux d'erreur FishXCode, codes de statut, erreurs frequentes et procedure de diagnostic.
+description: Champs des journaux d'erreur aicentos, codes de statut, erreurs frequentes et procedure de diagnostic.
 ---
 
 # Guide des journaux d'erreur
 
 Les journaux d'erreur servent a identifier la cause precise d'un echec de requete. Pour depanner, consultez d'abord [l'etat de sante des groupes](/fr/group-health) afin d'evaluer l'impact, puis utilisez le `request_id` dans les journaux d'erreur pour retrouver la requete exacte.
 
-Entree : [Console -> Journaux d'utilisation](https://fishxcode.com/console/log). Passez le type de journal sur **Journaux d'erreur**, puis filtrez par periode, modele, token, groupe, ID de requete, message d'erreur ou code de statut.
+Entree : [Console -> Journaux d'utilisation](https://www.aicentos.com/console/log). Passez le type de journal sur **Journaux d'erreur**, puis filtrez par periode, modele, token, groupe, ID de requete, message d'erreur ou code de statut.
 
 ::: tip Lecture rapide
 - `request_id` sert a retrouver une requete unique

@@ -1,6 +1,6 @@
 ---
 title: Account Setup & Management
-description: FishXCode account registration, API Key setup, top-up, and account security guide.
+description: aicentos account registration, API Key setup, top-up, and account security guide.
 ---
 
 # Account Setup & Management
@@ -12,45 +12,45 @@ description: FishXCode account registration, API Key setup, top-up, and account 
 
 ### 1. Register
 
-Visit [fishxcode.com](https://fishxcode.com/register?aff=9CTW) and click **Register**:
+Visit [aicentos](https://www.aicentos.com/sign-up) and click **Register**:
 
-![FishXCode Home](/img/start/api-01-home.png)
+![aicentos](/img/start/api-01-home-1.png)
 
 Choose a registration method (GitHub, LinuxDO, or username):
 
-![Registration Method Selection](/img/start/api-02-register.png)
+![Registration Method Selection](/img/start/api-02-register-1.png)
 
 Fill in your username, password, and confirm password to complete registration:
 
-![Registration Form](/img/start/api-03-register-form.png)
+![Registration Form](/img/start/api-03-register-form-1.png)
 
 ### 2. Log In
 
 After registering, log in with your username and password:
 
-![Login Page](/img/start/api-04-login.png)
+![Login Page](/img/start/api-04-login-1.png)
 
 After logging in, you will be taken to the console:
 
-![Console Home](/img/start/api-05-console.png)
+![Console Home](/img/start/api-05-console-1.png)
 
 ### 3. Create a Token
 
 Go to **Console -> Token Management -> Add Token** and fill in the form:
 
-![Add Token](/img/start/api-06-token-create.png)
+![Add Token](/img/start/api-06-token-create-1.png)
 
-- For **Token Group**, select **Official Channel**. This group includes the full Claude model lineup and automatically selects the best model based on task complexity. Specific channels and models are subject to change -- check the [Pricing page](https://fishxcode.com/pricing) for the latest information.
+- For **Token Group**, select **Official Channel**. This group includes the full Claude model lineup and automatically selects the best model based on task complexity. Specific channels and models are subject to change -- check the [Pricing page](https://www.aicentos.com/pricing) for the latest information.
 
 After creation, click the **Copy** button in the token list to get your API Key (format: `sk-xxx`):
 
-![Copy Token](/img/start/api-07-token-copy.png)
+![Copy Token](/img/start/api-07-token-copy-1.png)
 
 ### 4. Top Up
 
 Go to **Console -> Wallet Management**. Alipay, WeChat Pay, and redeem codes are supported:
 
-![Top-Up Page](/img/start/api-08-wallet.png)
+![Top-Up Page](/img/start/api-08-wallet-1.png)
 
 | Method | Steps |
 |---|---|
@@ -110,7 +110,7 @@ Deletion is irreversible. Make sure you no longer need the token before deleting
 
 ### Third-Party Login
 
-FishXCode supports the following third-party login methods:
+aicentos supports the following third-party login methods:
 
 | Method | Description |
 |---|---|
@@ -128,7 +128,7 @@ If you notice any of the following issues, take action immediately:
 3. **Unexpected balance deductions** -> Check the usage logs for specific call records to confirm whether the consumption is legitimate
 
 ::: tip Contact Support
-If you encounter account issues, get help through the [Contact Us](https://fishxcode.com/contact) page.
+If you encounter account issues, get help through the [Contact Us](https://www.aicentos.com/contact) page.
 :::
 
 ---

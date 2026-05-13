@@ -1,11 +1,11 @@
 {
-  "name": "fishxcode-docs",
+  "name": "aicentos-docs",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "FishXCode - AI Coding 中转站，支持 Claude、Codex 模型在多种平台使用",
+  "description": "aicentos - AI Coding 中转站，支持 Claude、Codex 模型在多种平台使用",
   "keywords": [
-    "fishxcode",
+    "aicentos",
     "ai-coding",
     "claude-code",
     "codex",
@@ -15,22 +15,24 @@
     "api-relay",
     "documentation"
   ],
-  "homepage": "https://doc.fishxcode.com",
+  "homepage": "https://www.aicentos.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fishxcode/fishxcode.git"
+    "url": "https://www.aicentos.com/"
   },
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "docs:build": "vitepress build docs"
   },
   "devDependencies": {
     "@giscus/vue": "^3.1.1",
     "@vite-pwa/vitepress": "^1.1.0",
     "feed": "^4.2.2",
     "medium-zoom": "^1.1.0",
+    "vite-plugin-pwa": "^1.3.0",
     "vitepress": "^1.6.4",
     "vitepress-plugin-group-icons": "^1.7.1",
     "workbox-window": "^7.4.0"

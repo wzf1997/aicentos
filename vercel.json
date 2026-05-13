@@ -1,9 +1,11 @@
 {
+  "buildCommand": "pnpm build",
+  "outputDirectory": ".vitepress/dist",
   "cleanUrls": true,
   "rewrites": [
     {
       "source": "/api/pricing",
-      "destination": "https://fishxcode.com/api/pricing"
+      "destination": "https://www.aicentos.com/api/pricing"
     }
   ],
   "headers": [

@@ -1,19 +1,19 @@
 ---
 layout: home
-title: FishXCode - Relais AI Coding
+title: aicentos - Relais AI Coding
 description: Relais AI Coding pour utiliser Claude et Codex sur plusieurs plateformes.
 
 hero:
-  name: "FishXCode"
+  name: "aicentos"
   text: "Relais AI Coding"
   tagline: Utilisez les modèles Claude et Codex sur plusieurs plateformes
   image:
     src: /img/logo.svg
-    alt: FishXCode Logo
+    alt: aicentos Logo
   actions:
     - theme: brand
       text: S'inscrire
-      link: https://fishxcode.com/register?aff=9CTW
+      link: https://www.aicentos.com/sign-up
     - theme: alt
       text: Documentation
       link: /fr/start

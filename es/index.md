@@ -1,19 +1,19 @@
 ---
 layout: home
-title: FishXCode - Estación AI Coding
+title: aicentos - Estación AI Coding
 description: Estación AI Coding para usar modelos Claude y Codex en múltiples plataformas.
 
 hero:
-  name: "FishXCode"
+  name: "aicentos"
   text: "Estación AI Coding"
   tagline: Usa modelos Claude y Codex en múltiples plataformas
   image:
     src: /img/logo.svg
-    alt: FishXCode Logo
+    alt: aicentos Logo
   actions:
     - theme: brand
       text: Registrarse
-      link: https://fishxcode.com/register?aff=9CTW
+      link: https://www.aicentos.com/sign-up
     - theme: alt
       text: Documentación
       link: /es/start

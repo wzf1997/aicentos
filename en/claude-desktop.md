@@ -1,4 +1,4 @@
-# Using FishXCode with Claude Desktop
+# Using aicentos with Claude Desktop
 
 ## Scope
 
@@ -8,7 +8,7 @@ Use this setup if you want to:
 
 - use **Cowork** in Claude Desktop
 - use **Code** in Claude Desktop
-- route requests through FishXCode via a custom API or gateway
+- route requests through aicentos via a custom API or gateway
 
 ::: warning Note
 This is not the old "just sign in and chat" flow. With third-party inference enabled, you mainly use the **Cowork** and **Code** tabs.
@@ -19,11 +19,11 @@ This is not the old "just sign in and chat" flow. With third-party inference ena
 Prepare the following first:
 
 1. The latest Claude Desktop
-2. A FishXCode token
+2. A aicentos token
 3. A token that can access Claude models
 
 Get your token here:
-- [https://fishxcode.com/console/token](https://fishxcode.com/console/token)
+- [aicentos](https://www.aicentos.com/console/token)
 
 Recommended starter models:
 
@@ -63,15 +63,15 @@ Select:
 Gateway
 ```
 
-FishXCode maps to the `gateway` mode in this flow.
+aicentos maps to the `gateway` mode in this flow.
 
-### 4. Fill in the FishXCode settings
+### 4. Fill in the aicentos settings
 
 Use the following values:
 
-- Gateway URL: `https://fishxcode.com`
+- Gateway URL: `https://www.aicentos.com/`
 - Authentication: `x-api-key`
-- API Key: your FishXCode token
+- API Key: your aicentos token
 
 If the UI asks for models, start with:
 
@@ -123,16 +123,16 @@ Common locations:
 The local file stores the third-party inference data under `enterpriseConfig`. The safer path is to configure it in the app first, then back up the generated config rather than hand-writing JSON from scratch.
 :::
 
-## Recommended FishXCode Values
+## Recommended aicentos Values
 
 If you want to verify the key fields manually, focus on these:
 
 | Field | Recommended Value |
 | --- | --- |
 | `inferenceProvider` | `gateway` |
-| `inferenceGatewayBaseUrl` | `https://fishxcode.com` |
+| `inferenceGatewayBaseUrl` | `https://www.aicentos.com/` |
 | `inferenceGatewayAuthScheme` | `x-api-key` |
-| `inferenceGatewayApiKey` | your FishXCode token |
+| `inferenceGatewayApiKey` | your aicentos token |
 | `inferenceModels` | list of Claude models |
 | `isClaudeCodeForDesktopEnabled` | `true` |
 
@@ -191,16 +191,16 @@ Check in this order:
 1. Developer mode is enabled
 2. `Configure third-party inference` was completed
 3. You selected `Gateway`
-4. `gatewayUrl` is `https://fishxcode.com`
+4. `gatewayUrl` is `https://www.aicentos.com/`
 5. The token is valid and can access Claude models
 6. Claude Desktop was fully restarted after setup
 
-### Why is the Gateway URL not `https://fishxcode.com/v1`?
+### Why is the Gateway URL not `https://www.aicentos.com/v1`?
 
 Because Claude Desktop third-party inference uses Anthropic-style gateway configuration, not the OpenAI-compatible `/v1/chat/completions` path. Use the gateway root URL instead:
 
 ```text
-https://fishxcode.com
+https://www.aicentos.com/
 ```
 
 ### What if authentication fails after setup?
@@ -208,7 +208,7 @@ https://fishxcode.com
 Check these first:
 
 1. Authentication is set to `x-api-key`
-2. The API key field contains your FishXCode token directly
+2. The API key field contains your aicentos token directly
 3. The token is still valid and has the required permissions
 
 ### Can I edit the local JSON manually?

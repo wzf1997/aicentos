@@ -1,6 +1,6 @@
 ---
 title: Group Health
-description: FishXCode group health status, team token details, export columns, and troubleshooting flow.
+description: aicentos group health status, team token details, export columns, and troubleshooting flow.
 ---
 
 # Group Health
@@ -14,22 +14,22 @@ Group health helps determine whether an API issue is an isolated request failure
 When troubleshooting API errors, check group health first, then open the single usage log entry to locate the specific `request_id`.
 
 ::: info Data scope
-The public `status` page embedded here queries group health across all FishXCode users during the selected time window. It reflects platform-wide group availability and is real-time, impartial, and stable.
+The public `status` page embedded here queries group health across all aicentos users during the selected time window. It reflects platform-wide group availability and is real-time, impartial, and stable.
 
 The **Usage Logs -> Group Health** view inside the console counts data visible under the current account permissions. Personal users usually see only their own tokens; enterprise and team admins can review team usage by user, username, token, and group.
 :::
 
 <iframe
-  src="https://status.fishxcode.com/group/global?view=list&sort=group&window=24h"
-  title="FishXCode Group Health"
+  src="https://www.aicentos.com/group/global?view=list&sort=group&window=24h"
+  title="aicentos Group Health"
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"
   style="width: 100%; height: 720px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-soft);"
 ></iframe>
 
-If the status page above does not load correctly, open [FishXCode Group Health](https://status.fishxcode.com/group/global?view=list&sort=group&window=24h) directly.
+If the status page above does not load correctly, open [aicentos Group Health](https://www.aicentos.com/group/global?view=list&sort=group&window=24h) directly.
 
-Console entry: [Console -> Usage Logs](https://fishxcode.com/console/log). In error logs or statistics views, filter by time range, model, token, group, error message, and status code.
+Console entry: [Console -> Usage Logs](https://www.aicentos.com/console/log). In error logs or statistics views, filter by time range, model, token, group, error message, and status code.
 
 ## Console Example
 

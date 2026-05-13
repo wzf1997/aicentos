@@ -19,10 +19,10 @@ export type PageActionPlatform = {
 }
 
 export const PAGE_ACTION_CONFIG = {
-  siteBaseUrl: 'https://doc.fishxcode.com',
+  siteBaseUrl: 'https://www.aicentos.com/',
   github: {
-    owner: 'fishxcode',
-    repo: 'fishxcode',
+    owner: 'aicentos',
+    repo: 'aicentos',
     branch: 'main',
     pathPrefix: '',
   },

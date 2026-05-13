@@ -1,6 +1,6 @@
 ---
 title: Status de saude dos grupos
-description: Status de saude dos grupos FishXCode, detalhes de tokens de equipe, colunas de exportacao e fluxo de diagnostico.
+description: Status de saude dos grupos aicentos, detalhes de tokens de equipe, colunas de exportacao e fluxo de diagnostico.
 ---
 
 # Status de saude dos grupos
@@ -14,22 +14,22 @@ O status de saude dos grupos ajuda a saber se uma falha de chamada e um problema
 Ao diagnosticar falhas de API, veja primeiro o status do grupo e depois use os logs de uso para localizar o `request_id` especifico.
 
 ::: info Escopo dos dados
-A pagina publica `status` incorporada aqui consulta o status de saude dos grupos usados por todos os usuarios FishXCode durante o periodo selecionado. Ela reflete a disponibilidade global dos grupos da plataforma e e em tempo real, imparcial e estavel.
+A pagina publica `status` incorporada aqui consulta o status de saude dos grupos usados por todos os usuarios aicentos durante o periodo selecionado. Ela reflete a disponibilidade global dos grupos da plataforma e e em tempo real, imparcial e estavel.
 
 A visao **Logs de uso -> Status de saude dos grupos** dentro do console mostra os dados visiveis conforme as permissoes da conta atual. Usuarios pessoais normalmente veem apenas seus proprios tokens; administradores de empresa e equipe podem analisar uso por usuario, nome de usuario, token e grupo.
 :::
 
 <iframe
-  src="https://status.fishxcode.com/group/global?view=list&sort=group&window=24h"
-  title="Status de saude dos grupos FishXCode"
+  src="https://www.aicentos.com/group/global?view=list&sort=group&window=24h"
+  title="Status de saude dos grupos aicentos"
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"
   style="width: 100%; height: 720px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-soft);"
 ></iframe>
 
-Se a pagina de status acima nao carregar, abra diretamente o [status de saude dos grupos FishXCode](https://status.fishxcode.com/group/global?view=list&sort=group&window=24h).
+Se a pagina de status acima nao carregar, abra diretamente o [status de saude dos grupos aicentos](https://www.aicentos.com/group/global?view=list&sort=group&window=24h).
 
-Entrada no console: [Console -> Logs de uso](https://fishxcode.com/console/log). Em logs de erro ou na visao estatistica, filtre por periodo, modelo, Token, grupo, mensagem de erro e codigo de status.
+Entrada no console: [Console -> Logs de uso](https://www.aicentos.com/console/log). Em logs de erro ou na visao estatistica, filtre por periodo, modelo, Token, grupo, mensagem de erro e codigo de status.
 
 ## Exemplo no console
 
